@@ -446,7 +446,7 @@ es.onmessage=function(e){
     if(d.cn)h+='<div style="color:#94a3b8;font-size:11px;margin-top:3px;border-top:1px solid #334155;padding-top:3px">🌐 '+esc(d.cn)+'</div>';
     div.innerHTML=h; feed.appendChild(div); feed.scrollTop=feed.scrollHeight;
     if(d.suggestions&&d.suggestions.length){
-      sf.innerHTML='';
+    // 保留历史建议，追加新建议
       d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>💡 建议'+(i+1)+'</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
