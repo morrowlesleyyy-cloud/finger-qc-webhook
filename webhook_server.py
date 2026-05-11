@@ -138,7 +138,7 @@ RM3,980 per implant (orig RM6K). Free check-up. Korea Osstem.
 - 每条回复控制在100字以内
 - 语气友好温暖，用😊🤗emoji
 - 不说过度承诺的话
-- 每次最后有行动号召
+- **不要每句话都邀约。根据对话阶段决定：开场/问情况时不需要邀约，报价后/客户有意向时再邀约**
 '''
 
 def ai_suggest(text):
