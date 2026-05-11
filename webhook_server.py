@@ -251,6 +251,7 @@ def detect_scenario(text):
 
 
 
+@app.route("/webhook", methods=["GET","POST"])
 def webhook():
     if request.method == "GET":
         ch = request.args.get("challenge")
@@ -293,6 +294,8 @@ def handle_inbound(msg):
     if s: session["source"] = s
     session["last_activity"] = bj_now().isoformat()
     data["total_messages"] = data.get("total_messages",0)+1
+    session["messages"].append({"type":"customer","content":content,"time":bj_now().isoformat()})
+    c = content
     save_session(p,session,data)
     tag = n or p[-4:]
     log.info(f"📩 {tag}: {c[:60]}")
