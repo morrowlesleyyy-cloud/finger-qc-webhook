@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "training_pairs": [
+    {
+      "id": "q_001",
+      "customer_question": "我拔掉一颗大牙，补回需要多少钱？",
+      "source": "客户 daniel1688",
+      "status": "pending",
+      "answers": [],
+      "best_answer_index": null,
+      "created_at": "2026-05-14T10:05:00+08:00",
+      "notes": "客户已拔牙，询问补牙/种牙费用"
+    }
+  ],
+  "last_updated": "2026-05-14T10:05:00+08:00"
+}

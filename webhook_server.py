@@ -425,7 +425,8 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
 </style></head><body>
 <div class=header><h1>Finger 实时看板</h1>
-<div class=stats><span>消息 <b id=msgC>0</b></span><span>客户 <b id=custC>0</b></span><span>均分 <b id=avgS>-</b></span></div></div>
+<div class=stats><span>消息 <b id=msgC>0</b></span><span>客户 <b id=custC>0</b></span><span>均分 <b id=avgS>-</b></span></div>
+<div style=font-size:12px><a href='/records'+location.search style=color:#94a3b8;text-decoration:none;margin-right:10px>📋 记录</a><a href='/training'+location.search style=color:#94a3b8;text-decoration:none>📚 培训</a></div></div>
 <div class=main>
 <div class=feed-col><div id=feed></div></div>
 <div class=suggest-col><div class=sug-hd>💡 建议回复</div><div id=sugFeed><div class=sug-empty>等待客户消息...<br>将根据客户问题给出建议</div></div></div>
@@ -516,6 +517,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 <div class=header><h1>📋 沟通记录</h1><nav>
 <a href=/live>实时看板</a>
 <a href=/records>沟通记录</a>
+<a href=/training>话术培训</a>
 <a href=/status>状态</a>
 </nav></div>
 <div class=main>
@@ -632,6 +634,174 @@ setInterval(refreshDisplay,10000);
 
 @app.route("/records")
 def records(): return RECORDS_HTML, 200, {"Content-Type":"text/html; charset=utf-8"}
+
+
+# ====== 话术培训系统 ======
+TRAINING_FILE = os.path.join(DATA_DIR, "training_data.json")
+
+def load_training_data():
+    if os.path.exists(TRAINING_FILE):
+        try:
+            return json.load(open(TRAINING_FILE, "r", encoding="utf-8"))
+        except:
+            pass
+    return {"version": "1.0", "training_pairs": [], "last_updated": bj_now().isoformat()}
+
+def save_training_data(d):
+    d["last_updated"] = bj_now().isoformat()
+    json.dump(d, open(TRAINING_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+
+TRAINING_HTML = """<!DOCTYPE html>
+<html lang=zh-CN><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1.0">
+<title>Finger 话术培训</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.header h1{font-size:22px;font-weight:700;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header nav a{color:#94a3b8;font-size:12px;margin-left:12px;text-decoration:none}
+.header nav a:hover{color:#38bdf8}
+.stats{display:flex;gap:12px;flex-wrap:wrap}
+.stat-card{background:#1e293b;border-radius:10px;padding:10px 18px;text-align:center;border:1px solid #334155}
+.stat-card .num{font-size:26px;font-weight:700;color:#60a5fa}
+.stat-card .label{font-size:11px;color:#94a3b8;margin-top:2px}
+.last-upd{font-size:11px;color:#64748b;margin-bottom:16px}
+.board{display:flex;flex-direction:column;gap:14px}
+.card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155;transition:border-color .2s}
+.card:hover{border-color:#475569}
+.card-hd{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:12px;flex-wrap:wrap}
+.q-id{font-size:11px;color:#64748b;font-family:monospace;background:#0f172a;padding:2px 8px;border-radius:4px}
+.q-text{font-size:14px;line-height:1.6;color:#f1f5f9;padding:12px;background:#0f172a;border-radius:8px;border-left:3px solid #60a5fa;margin-bottom:12px}
+.q-source{font-size:11px;color:#64748b}
+.answers{display:flex;flex-direction:column;gap:8px}
+.answer{background:#0f172a;border-radius:8px;padding:10px 14px;border-left:3px solid #334155;font-size:13px;line-height:1.5;color:#cbd5e1}
+.answer.best{border-left-color:#22c55e}
+.answer-label{font-size:10px;font-weight:600;color:#64748b;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px}
+.answer.best .answer-label{color:#22c55e}
+.empty-state{text-align:center;padding:60px 20px;color:#64748b}
+.empty-state .icon{font-size:48px;margin-bottom:12px}
+.empty-state h3{font-size:18px;color:#94a3b8;margin-bottom:8px}
+.empty-state p{font-size:14px;line-height:1.6}
+.status-badge{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:500;margin-left:8px}
+.status-pending{background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40}
+.status-trained{background:#22c55e20;color:#22c55e;border:1px solid #22c55e40}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.card{animation:fadeIn .3s}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
+</style></head><body>
+<div class=header>
+<h1>📋 话术培训看板</h1>
+<nav>
+<a href='/live'+location.search>实时看板</a>
+<a href='/records'+location.search>沟通记录</a>
+<a href='/training'+location.search>话术培训</a>
+</nav>
+</div>
+<div style=display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px>
+<div class=stat-card><div class=num id=totalQ>0</div><div class=label>问题总数</div></div>
+<div class=stat-card><div class=num id=trainedQ>0</div><div class=label>已培训</div></div>
+<div class=stat-card><div class=num id=pendingQ>0</div><div class=label>待培训</div></div>
+<button class=stat-card style=cursor:pointer onclick=loadData()><div style=color:#94a3b8;font-size:13px>🔄 刷新</div></button>
+</div>
+<div class=last-upd id=lastUpdated>加载中...</div>
+<div class=board id=board>
+<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3><p>遇到客户问题时，Finger 会记录下来<br>你可以提供 3 条回答话术来完成培训</p></div>
+</div>
+<script>
+function qp(){return location.search}
+async function loadData(){
+  try{
+    var resp=await fetch('/api/training'+qp());
+    if(!resp.ok)throw Error('fail');
+    var data=await resp.json();
+    render(data);
+  }catch(e){
+    document.getElementById('board').innerHTML='<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3></div>';
+    document.getElementById('lastUpdated').textContent='等待第一条记录...';
+  }
+}
+function render(data){
+  var pairs=data.training_pairs||[];
+  var total=pairs.length,trained=pairs.filter(function(p){return p.status==='trained'}).length,pending=total-trained;
+  document.getElementById('totalQ').textContent=total;
+  document.getElementById('trainedQ').textContent=trained;
+  document.getElementById('pendingQ').textContent=pending;
+  document.getElementById('lastUpdated').textContent='🕐 最后更新: '+(data.last_updated||'未知');
+  var board=document.getElementById('board');
+  if(total===0){
+    board.innerHTML='<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3><p>遇到客户问题时，Finger 会记录下来<br>你可以提供 3 条回答话术来完成培训</p></div>';
+    return;
+  }
+  var sorted=[...pairs].reverse();
+  board.innerHTML=sorted.map(function(p){
+    var isTrained=p.status==='trained',ans=p.answers||[],best=p.best_answer_index;
+    return '<div class=card><div class=card-hd><div><span class=q-id>#'+esc(p.id)+'</span><span class="status-badge '+(isTrained?'status-trained':'status-pending')+'">'+(isTrained?'✅ 已培训':'⏳ 待培训')+'</span></div><span class=q-source>📞 '+esc(p.source||'未知')+'</span></div><div class=q-text>'+esc(p.customer_question)+'</div>'+(ans.length?'<div class=answers>'+ans.map(function(a,i){return '<div class="answer'+(best===i?' best':'')+'"><div class=answer-label>'+(best===i?'⭐ ':'')+'话术 '+(i+1)+(best===i?' (最优)':'')+'</div>'+esc(a.text)+'</div>'}).join('')+'</div>':'<div style=color:#64748b;font-size:13px;font-style:italic>等待话术培训...</div>')+'</div>';
+  }).join('');
+}
+function esc(t){var d=document.createElement('div');d.textContent=t||'';return d.innerHTML}
+loadData();
+setInterval(loadData,10000);
+</script></body></html>"""
+
+
+@app.route("/training")
+@require_auth
+def training():
+    return TRAINING_HTML, 200, {"Content-Type":"text/html; charset=utf-8"}
+
+
+@app.route("/api/training")
+@require_auth
+def training_api():
+    return jsonify(load_training_data())
+
+
+@app.route("/api/training/add", methods=["POST"])
+@require_auth
+def training_add():
+    d = request.get_json(silent=True) or {}
+    q = d.get("question", "").strip()
+    if not q:
+        return jsonify({"error": "question required"}), 400
+    data = load_training_data()
+    nid = f"q_{len(data['training_pairs']) + 1:03d}"
+    data["training_pairs"].append({
+        "id": nid,
+        "customer_question": q,
+        "source": d.get("source", "web"),
+        "status": "pending",
+        "answers": [],
+        "best_answer_index": None,
+        "created_at": bj_now().isoformat(),
+        "notes": d.get("notes", "")
+    })
+    save_training_data(data)
+    return jsonify({"ok": True, "id": nid})
+
+
+@app.route("/api/training/train", methods=["POST"])
+@require_auth
+def training_train():
+    d = request.get_json(silent=True) or {}
+    qid = d.get("id", "")
+    answers = d.get("answers", [])
+    best_idx = d.get("best_index", None)
+    if not qid:
+        return jsonify({"error": "id required"}), 400
+    data = load_training_data()
+    found = None
+    for p in data["training_pairs"]:
+        if p["id"] == qid:
+            found = p
+            break
+    if not found:
+        return jsonify({"error": "not found"}), 404
+    found["answers"] = [{"text": a} for a in answers[:3]]
+    found["best_answer_index"] = best_idx if best_idx is not None else (0 if answers else None)
+    found["status"] = "trained"
+    save_training_data(data)
+    return jsonify({"ok": True})
 
 
 if __name__ == "__main__":
