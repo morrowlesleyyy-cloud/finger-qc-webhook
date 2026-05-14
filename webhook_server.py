@@ -658,7 +658,7 @@ TRAINING_HTML = """<!DOCTYPE html>
 <title>Finger 话术培训</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px}
+body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:20px;display:flex;flex-direction:column}
 .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px}
 .header h1{font-size:22px;font-weight:700;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .header nav a{color:#94a3b8;font-size:12px;margin-left:12px;text-decoration:none}
@@ -668,9 +668,12 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .stat-card .num{font-size:26px;font-weight:700;color:#60a5fa}
 .stat-card .label{font-size:11px;color:#94a3b8;margin-top:2px}
 .last-upd{font-size:11px;color:#64748b;margin-bottom:16px}
+.content{display:flex;gap:20px;flex:1;overflow:hidden}
+.board-col{flex:1;overflow-y:auto;padding-right:8px}
 .board{display:flex;flex-direction:column;gap:14px}
-.card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155;transition:border-color .2s}
+.card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155;transition:border-color .2s;cursor:pointer}
 .card:hover{border-color:#475569}
+.card.active{border-color:#60a5fa}
 .card-hd{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:12px;flex-wrap:wrap}
 .q-id{font-size:11px;color:#64748b;font-family:monospace;background:#0f172a;padding:2px 8px;border-radius:4px}
 .q-text{font-size:14px;line-height:1.6;color:#f1f5f9;padding:12px;background:#0f172a;border-radius:8px;border-left:3px solid #60a5fa;margin-bottom:12px}
@@ -687,9 +690,21 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .status-badge{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:500;margin-left:8px}
 .status-pending{background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40}
 .status-trained{background:#22c55e20;color:#22c55e;border:1px solid #22c55e40}
+.form-panel{width:380px;display:flex;flex-direction:column;gap:14px}
+.form-panel h3{font-size:15px;color:#e2e8f0;padding-bottom:8px;border-bottom:1px solid #334155}
+.form-panel .q-preview{font-size:12px;color:#94a3b8;background:#0f172a;padding:10px;border-radius:8px;line-height:1.5;max-height:80px;overflow-y:auto}
+.form-panel label{font-size:11px;color:#94a3b8;font-weight:600}
+.form-panel textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:10px;font-size:13px;font-family:-apple-system,system-ui,sans-serif;resize:vertical;min-height:60px;outline:none;transition:border-color .2s}
+.form-panel textarea:focus{border-color:#60a5fa}
+.form-panel .btn{background:#2563eb;border:none;border-radius:8px;color:#fff;padding:12px;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}
+.form-panel .btn:hover{background:#1d4ed8}
+.form-panel .btn:disabled{background:#334155;color:#64748b;cursor:not-allowed}
+.form-panel .msg{font-size:11px;padding:8px 12px;border-radius:6px;display:none}
+.msg-ok{background:#166534;color:#4ade80;border:1px solid #22c55e40}
+.msg-err{background:#7f1d1d;color:#fca5a5;border:1px solid #ef444440}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
 @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 .card{animation:fadeIn .3s}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
 </style></head><body>
 <div class=header>
 <h1>📋 话术培训看板</h1>
@@ -706,16 +721,37 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 <button class=stat-card style=cursor:pointer onclick=loadData()><div style=color:#94a3b8;font-size:13px>🔄 刷新</div></button>
 </div>
 <div class=last-upd id=lastUpdated>加载中...</div>
+<div class=content>
+<div class=board-col>
 <div class=board id=board>
 <div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3><p>遇到客户问题时，Finger 会记录下来<br>你可以提供 3 条回答话术来完成培训</p></div>
 </div>
+</div>
+<div class=form-panel id=formPanel>
+<h3>✍️ 提交话术培训</h3>
+<div style=font-size:11px;color:#64748b>点击左侧待培训问题开始编辑</div>
+<div class=q-preview id=qPreview style=display:none></div>
+<div id=answerFields style=display:none>
+<label>话术 1</label>
+<textarea id=a1 placeholder="第一条话术..."></textarea>
+<label>话术 2</label>
+<textarea id=a2 placeholder="第二条话术..."></textarea>
+<label>话术 3</label>
+<textarea id=a3 placeholder="第三条话术..."></textarea>
+<button class=btn id=btnSubmit onclick=submitTraining()>💾 提交培训</button>
+<div class=msg id=formMsg></div>
+</div>
+</div>
+</div>
 <script>
 function qp(){return location.search}
+var allData=[],selectedId=null;
 async function loadData(){
   try{
     var resp=await fetch('/api/training'+qp());
     if(!resp.ok)throw Error('fail');
     var data=await resp.json();
+    allData=data.training_pairs||[];
     render(data);
   }catch(e){
     document.getElementById('board').innerHTML='<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3></div>';
@@ -731,14 +767,75 @@ function render(data){
   document.getElementById('lastUpdated').textContent='🕐 最后更新: '+(data.last_updated||'未知');
   var board=document.getElementById('board');
   if(total===0){
-    board.innerHTML='<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3><p>遇到客户问题时，Finger 会记录下来<br>你可以提供 3 条回答话术来完成培训</p></div>';
+    board.innerHTML='<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3></div>';
     return;
   }
   var sorted=[...pairs].reverse();
   board.innerHTML=sorted.map(function(p){
-    var isTrained=p.status==='trained',ans=p.answers||[],best=p.best_answer_index;
-    return '<div class=card><div class=card-hd><div><span class=q-id>#'+esc(p.id)+'</span><span class="status-badge '+(isTrained?'status-trained':'status-pending')+'">'+(isTrained?'✅ 已培训':'⏳ 待培训')+'</span></div><span class=q-source>📞 '+esc(p.source||'未知')+'</span></div><div class=q-text>'+esc(p.customer_question)+'</div>'+(ans.length?'<div class=answers>'+ans.map(function(a,i){return '<div class="answer'+(best===i?' best':'')+'"><div class=answer-label>'+(best===i?'⭐ ':'')+'话术 '+(i+1)+(best===i?' (最优)':'')+'</div>'+esc(a.text)+'</div>'}).join('')+'</div>':'<div style=color:#64748b;font-size:13px;font-style:italic>等待话术培训...</div>')+'</div>';
+    var isTrained=p.status==='trained',ans=p.answers||[],best=p.best_answer_index,active=selectedId===p.id?' active':'';
+    return '<div class=card'+active+' onclick=selectQuestion("'+esc(p.id)+'")><div class=card-hd><div><span class=q-id>#'+esc(p.id)+'</span><span class="status-badge '+(isTrained?'status-trained':'status-pending')+'">'+(isTrained?'✅ 已培训':'⏳ 待培训')+'</span></div><span class=q-source>📞 '+esc(p.source||'未知')+'</span></div><div class=q-text>'+esc(p.customer_question)+'</div>'+(ans.length?'<div class=answers>'+ans.map(function(a,i){return '<div class="answer'+(best===i?' best':'')+'"><div class=answer-label>'+(best===i?'⭐ ':'')+'话术 '+(i+1)+(best===i?' (最优)':'')+'</div>'+esc(a.text)+'</div>'}).join('')+'</div>':'<div style=color:#64748b;font-size:13px;font-style:italic>点击此卡片开始培训...</div>')+'</div>';
   }).join('');
+  if(selectedId)highlightQuestion(selectedId);
+}
+function selectQuestion(id){
+  selectedId=id;
+  var q=null;
+  for(var p of allData){if(p.id===id){q=p;break}}
+  if(!q)return;
+  var cards=document.querySelectorAll('.card');
+  cards.forEach(function(c){c.classList.remove('active')});
+  setTimeout(function(){
+    var target=document.querySelector('[onclick*="'+id+'"]');
+    if(target)target.classList.add('active');
+  },10);
+  document.getElementById('formPanel').querySelector('h3').textContent='✍️ 培训: #'+q.id;
+  var pre=document.getElementById('qPreview');
+  pre.textContent=q.customer_question;
+  pre.style.display='block';
+  document.getElementById('answerFields').style.display='block';
+  if(q.answers&&q.answers.length){
+    document.getElementById('a1').value=q.answers[0]?q.answers[0].text:'';
+    document.getElementById('a2').value=q.answers[1]?q.answers[1].text:'';
+    document.getElementById('a3').value=q.answers[2]?q.answers[2].text:'';
+  }else{
+    document.getElementById('a1').value='';
+    document.getElementById('a2').value='';
+    document.getElementById('a3').value='';
+  }
+  document.getElementById('formMsg').style.display='none';
+}
+function highlightQuestion(id){
+  var cards=document.querySelectorAll('.card');
+  cards.forEach(function(c){c.classList.remove('active')});
+  var target=document.querySelector('[onclick*="'+id+'"]');
+  if(target)target.classList.add('active');
+}
+async function submitTraining(){
+  if(!selectedId)return;
+  var a1=document.getElementById('a1').value.trim();
+  var a2=document.getElementById('a2').value.trim();
+  var a3=document.getElementById('a3').value.trim();
+  if(!a1&&!a2&&!a3){showMsg('请至少填写一条话术','err');return}
+  var btn=document.getElementById('btnSubmit');
+  btn.disabled=true;btn.textContent='⏳ 提交中...';
+  try{
+    var resp=await fetch('/api/training/train'+qp(),{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({id:selectedId,answers:[a1,a2,a3].filter(function(a){return a}),best_index:0})
+    });
+    if(!resp.ok)throw Error('提交失败');
+    showMsg('✅ 培训完成！问题 #'+selectedId+' 已标记为已培训','ok');
+    loadData();
+  }catch(e){
+    showMsg('❌ 提交失败: '+e.message,'err');
+  }finally{
+    btn.disabled=false;btn.textContent='💾 提交培训';
+  }
+}
+function showMsg(t,type){
+  var m=document.getElementById('formMsg');
+  m.textContent=t;m.className='msg '+(type==='ok'?'msg-ok':'msg-err');m.style.display='block';
 }
 function esc(t){var d=document.createElement('div');d.textContent=t||'';return d.innerHTML}
 loadData();
