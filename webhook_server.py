@@ -659,7 +659,18 @@ def records(): return RECORDS_HTML, 200, {"Content-Type":"text/html; charset=utf
 
 
 # ====== 话术培训系统 ======
-TRAINING_FILE = os.path.join(BASE_DIR, "training_data.json")
+# 优先用 /tmp 确保可写，部署时可从源码目录复制
+TRAINING_FILE = "/tmp/training_data.json"
+SRC_TRAINING_FILE = os.path.join(BASE_DIR, "training_data.json")
+
+# 首次启动从源码目录复制（如果 /tmp 没有的话）
+def init_training_file():
+    if not os.path.exists(TRAINING_FILE) and os.path.exists(SRC_TRAINING_FILE):
+        import shutil
+        shutil.copy2(SRC_TRAINING_FILE, TRAINING_FILE)
+        log.info(f"📚 已从 {SRC_TRAINING_FILE} 复制培训数据到 {TRAINING_FILE}")
+
+init_training_file()
 
 def load_training_data():
     if os.path.exists(TRAINING_FILE):
