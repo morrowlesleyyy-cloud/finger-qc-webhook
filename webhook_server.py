@@ -297,6 +297,28 @@ def handle_inbound(msg):
     session["messages"].append({"type":"customer","content":content,"time":bj_now().isoformat()})
     c = content
     save_session(p,session,data)
+    # 自动加入话术培训（仅文本消息）
+    if msg_type == "text" and c.strip() and len(c) > 5:
+        try:
+            td = load_training_data()
+            # 去重：检查最近50条是否有相同问题
+            dup = False
+            for tp in td["training_pairs"][-50:]:
+                if tp["customer_question"].strip() == c.strip():
+                    dup = True
+                    break
+            if not dup:
+                nid = f"q_{len(td['training_pairs']) + 1:03d}"
+                td["training_pairs"].append({
+                    "id": nid, "customer_question": c.strip(),
+                    "source": f"客户 {tag}", "status": "pending",
+                    "answers": [], "best_answer_index": None,
+                    "created_at": bj_now().isoformat(), "notes": "自动记录"
+                })
+                save_training_data(td)
+                log.info(f"📚 已加入培训: {nid} - {c[:50]}")
+        except Exception as e:
+            log.error(f"培训记录失败: {e}")
     tag = n or p[-4:]
     log.info(f"📩 {tag}: {c[:60]}")
     now = bj_now().strftime("%H:%M")
