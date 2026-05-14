@@ -747,19 +747,16 @@ setInterval(loadData,10000);
 
 
 @app.route("/training")
-@require_auth
 def training():
     return TRAINING_HTML, 200, {"Content-Type":"text/html; charset=utf-8"}
 
 
 @app.route("/api/training")
-@require_auth
 def training_api():
     return jsonify(load_training_data())
 
 
 @app.route("/api/training/add", methods=["POST"])
-@require_auth
 def training_add():
     d = request.get_json(silent=True) or {}
     q = d.get("question", "").strip()
@@ -782,7 +779,6 @@ def training_add():
 
 
 @app.route("/api/training/train", methods=["POST"])
-@require_auth
 def training_train():
     d = request.get_json(silent=True) or {}
     qid = d.get("id", "")
