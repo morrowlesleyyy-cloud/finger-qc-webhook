@@ -637,7 +637,8 @@ def records(): return RECORDS_HTML, 200, {"Content-Type":"text/html; charset=utf
 
 
 # ====== 话术培训系统 ======
-TRAINING_FILE = os.path.join(DATA_DIR, "training_data.json")
+TRAINING_DIR = os.environ.get("DATA_DIR", BASE_DIR)
+TRAINING_FILE = os.path.join(TRAINING_DIR, "training_data.json")
 
 def load_training_data():
     if os.path.exists(TRAINING_FILE):
