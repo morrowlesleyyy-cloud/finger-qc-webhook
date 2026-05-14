@@ -296,6 +296,7 @@ def handle_inbound(msg):
     data["total_messages"] = data.get("total_messages",0)+1
     session["messages"].append({"type":"customer","content":content,"time":bj_now().isoformat()})
     c = content
+    tag = n or p[-4:]
     save_session(p,session,data)
     # 自动加入话术培训（仅文本消息）
     if msg_type == "text" and c.strip() and len(c) > 5:
@@ -319,7 +320,6 @@ def handle_inbound(msg):
                 log.info(f"📚 已加入培训: {nid} - {c[:50]}")
         except Exception as e:
             log.error(f"培训记录失败: {e}")
-    tag = n or p[-4:]
     log.info(f"📩 {tag}: {c[:60]}")
     now = bj_now().strftime("%H:%M")
     cn = translate_text(c)
@@ -659,18 +659,7 @@ def records(): return RECORDS_HTML, 200, {"Content-Type":"text/html; charset=utf
 
 
 # ====== 话术培训系统 ======
-# 优先用 /tmp 确保可写，部署时可从源码目录复制
-TRAINING_FILE = "/tmp/training_data.json"
-SRC_TRAINING_FILE = os.path.join(BASE_DIR, "training_data.json")
-
-# 首次启动从源码目录复制（如果 /tmp 没有的话）
-def init_training_file():
-    if not os.path.exists(TRAINING_FILE) and os.path.exists(SRC_TRAINING_FILE):
-        import shutil
-        shutil.copy2(SRC_TRAINING_FILE, TRAINING_FILE)
-        log.info(f"📚 已从 {SRC_TRAINING_FILE} 复制培训数据到 {TRAINING_FILE}")
-
-init_training_file()
+TRAINING_FILE = os.path.join(BASE_DIR, "training_data.json")
 
 def load_training_data():
     if os.path.exists(TRAINING_FILE):
