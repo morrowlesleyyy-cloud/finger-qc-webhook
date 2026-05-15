@@ -5,7 +5,7 @@
       "id": "q_001",
       "customer_question": "Tee Huey Chyun\n012-7232772",
       "source": "Tee Huey Chyun（客服：Mia）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -23,7 +23,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -31,7 +31,7 @@
       "id": "q_002",
       "customer_question": "English plss",
       "source": "lan（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -49,7 +49,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 请说英文"
     },
@@ -57,7 +57,7 @@
       "id": "q_003",
       "customer_question": "Whereabout ur location",
       "source": "lan（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -75,7 +75,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 位置在哪？"
     },
@@ -83,7 +83,7 @@
       "id": "q_004",
       "customer_question": "Can. I cal u",
       "source": "lan（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -101,7 +101,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以打给你吗？"
     },
@@ -109,7 +109,7 @@
       "id": "q_005",
       "customer_question": "Ok tq",
       "source": "lan（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -127,7 +127,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的谢谢"
     },
@@ -135,7 +135,7 @@
       "id": "q_006",
       "customer_question": "Thank you for contacting Dr Brian Thiaga Wisdom Sanctuary Inc! Please let us know how we can help you.",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -153,7 +153,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -161,7 +161,7 @@
       "id": "q_007",
       "customer_question": "Great can we fix on 24 April 3pm",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -179,7 +179,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 太好了，约4月24日下午3点？"
     },
@@ -187,7 +187,7 @@
       "id": "q_008",
       "customer_question": "Dr Brian Thiaga",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -205,7 +205,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -213,7 +213,7 @@
       "id": "q_009",
       "customer_question": "Ok thank you",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -231,7 +231,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的谢谢"
     },
@@ -239,7 +239,7 @@
       "id": "q_010",
       "customer_question": "Cyberjaya",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -257,7 +257,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 赛城"
     },
@@ -265,7 +265,7 @@
       "id": "q_011",
       "customer_question": "Ok see you",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -283,7 +283,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的待会见"
     },
@@ -291,7 +291,7 @@
       "id": "q_012",
       "customer_question": "Hi",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -309,7 +309,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -317,7 +317,7 @@
       "id": "q_013",
       "customer_question": "Please adjust my appointment to 4pm",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -335,7 +335,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 请把预约改到下午4点"
     },
@@ -343,7 +343,7 @@
       "id": "q_014",
       "customer_question": "Thank you",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -361,7 +361,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -369,7 +369,7 @@
       "id": "q_015",
       "customer_question": "My eta by 4.08",
       "source": "Brian Thiaga Wisdom Sanct（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -387,7 +387,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 预计4点08分到"
     },
@@ -395,7 +395,7 @@
       "id": "q_016",
       "customer_question": "Location, cost",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -413,7 +413,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 位置和价格？"
     },
@@ -421,7 +421,7 @@
       "id": "q_017",
       "customer_question": "Yes go ahead and explain",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -439,7 +439,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的请说"
     },
@@ -447,7 +447,7 @@
       "id": "q_018",
       "customer_question": "Extracted 6 months ago",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -465,7 +465,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 拔牙6个月了"
     },
@@ -473,7 +473,7 @@
       "id": "q_019",
       "customer_question": "Implant for molar tooth and non molar how much",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -491,7 +491,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 大牙和其他牙种植价格多少？"
     },
@@ -499,7 +499,7 @@
       "id": "q_020",
       "customer_question": "I have 3 on the left and 3 on the right",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -517,7 +517,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 左边3颗右边3颗"
     },
@@ -525,7 +525,7 @@
       "id": "q_021",
       "customer_question": "Yes, you can post the diagram, and I can give the exact position",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -543,7 +543,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -551,7 +551,7 @@
       "id": "q_022",
       "customer_question": "Roughly..",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -569,7 +569,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 大概"
     },
@@ -577,7 +577,7 @@
       "id": "q_023",
       "customer_question": "Lower jaw",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -595,7 +595,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 下颌"
     },
@@ -603,7 +603,7 @@
       "id": "q_024",
       "customer_question": "The price will be less right, not the cost of 7 individual implants right",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -621,7 +621,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 7颗一起做应该更便宜吧？"
     },
@@ -629,7 +629,7 @@
       "id": "q_025",
       "customer_question": "Costs is important for me, being a retired teacher 65 yo",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -647,7 +647,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我是退休老师65岁价格很重要"
     },
@@ -655,7 +655,7 @@
       "id": "q_026",
       "customer_question": "May I know 2 implant costs how muchMay I know 2 implant costs how much",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -673,7 +673,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -681,7 +681,7 @@
       "id": "q_027",
       "customer_question": "Ok",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -699,7 +699,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -707,7 +707,7 @@
       "id": "q_028",
       "customer_question": "Tmro I come over\nI am from Section 17 PJ",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -725,7 +725,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 明天过来，我从Section 17 PJ出发"
     },
@@ -733,7 +733,7 @@
       "id": "q_029",
       "customer_question": "Ng Kok Yew",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -751,7 +751,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -759,7 +759,7 @@
       "id": "q_030",
       "customer_question": "Yes looking for parking",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -777,7 +777,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -785,7 +785,7 @@
       "id": "q_031",
       "customer_question": "Ok, friendly, however the bridge price is expensive..Ok, friendly, however the bridge price is expensive..",
       "source": "kokyewng（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -803,7 +803,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 牙桥价格太贵了"
     },
@@ -811,7 +811,7 @@
       "id": "q_032",
       "customer_question": "Location?",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -829,7 +829,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 位置在哪？"
     },
@@ -837,7 +837,7 @@
       "id": "q_033",
       "customer_question": "Whom am I chatting with?",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -855,7 +855,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我在跟谁聊？"
     },
@@ -863,7 +863,7 @@
       "id": "q_034",
       "customer_question": "Hi cici , \nMay I know how is the implant done? Do you have video?",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -881,7 +881,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -889,7 +889,7 @@
       "id": "q_035",
       "customer_question": "Is the implant done on Jaw bone?",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -907,7 +907,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 是在颌骨上做种植吗？"
     },
@@ -915,7 +915,7 @@
       "id": "q_036",
       "customer_question": "And is it expensive?",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -933,7 +933,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 贵吗？"
     },
@@ -941,7 +941,7 @@
       "id": "q_037",
       "customer_question": "Kepong",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -959,7 +959,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 甲洞"
     },
@@ -967,7 +967,7 @@
       "id": "q_038",
       "customer_question": "What time the clinic close?",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -985,7 +985,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 几点关门？"
     },
@@ -993,7 +993,7 @@
       "id": "q_039",
       "customer_question": "Ok I’ll try to make appointment next week",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -1011,7 +1011,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1019,7 +1019,7 @@
       "id": "q_040",
       "customer_question": "How about Saturday say 3 pm",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1037,7 +1037,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 周六下午3点可以吗？"
     },
@@ -1045,7 +1045,7 @@
       "id": "q_041",
       "customer_question": "Pls share location TQ",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -1063,7 +1063,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 请发位置谢谢"
     },
@@ -1071,7 +1071,7 @@
       "id": "q_042",
       "customer_question": "Hi appointment postpone next week 🙏🏼🙏🏼 I’m still in Klang 🙏🏼🙏🏼",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -1089,7 +1089,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 预约推迟到下周"
     },
@@ -1097,7 +1097,7 @@
       "id": "q_043",
       "customer_question": "Can 🙏🏼 paiseh",
       "source": "Yik Tien Diew（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1115,7 +1115,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以，不好意思"
     },
@@ -1123,7 +1123,7 @@
       "id": "q_044",
       "customer_question": "May l make an appointment today afternoon for checking n consulting my teeth problem?",
       "source": "MR CHAI LEK（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -1141,7 +1141,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以预约今天下午检查牙齿吗？"
     },
@@ -1149,7 +1149,7 @@
       "id": "q_045",
       "customer_question": "Ok thanks 👍",
       "source": "MR CHAI LEK（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1167,7 +1167,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的谢谢"
     },
@@ -1175,7 +1175,7 @@
       "id": "q_046",
       "customer_question": "Yik Tien Diew",
       "source": "MR CHAI LEK（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1193,7 +1193,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1201,7 +1201,7 @@
       "id": "q_047",
       "customer_question": "I am sorry to inform you that I will late 45mins.",
       "source": "MR CHAI LEK（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -1219,7 +1219,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1227,7 +1227,7 @@
       "id": "q_048",
       "customer_question": "All teeth still there, except worn of due to grinding/ clenching",
       "source": "Julia Lim（客服：Victoria Foo）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -1245,7 +1245,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 牙齿还在但磨耗严重"
     },
@@ -1253,7 +1253,7 @@
       "id": "q_049",
       "customer_question": "Share your location pls.",
       "source": "Julia Lim（客服：Victoria Foo）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -1271,7 +1271,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 请分享位置"
     },
@@ -1279,7 +1279,7 @@
       "id": "q_050",
       "customer_question": "Can I come next Monday 2pm..",
       "source": "Julia Lim（客服：Victoria Foo）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1297,7 +1297,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 下周一2点可以来吗？"
     },
@@ -1305,7 +1305,7 @@
       "id": "q_051",
       "customer_question": "👌I think my case no need ct scan..",
       "source": "Julia Lim（客服：Victoria Foo）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1323,7 +1323,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我觉得不需要CT扫描"
     },
@@ -1331,7 +1331,7 @@
       "id": "q_052",
       "customer_question": "Hi can we communicate in English 😂",
       "source": "KHtanUK（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1349,7 +1349,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以用英文沟通吗？"
     },
@@ -1357,7 +1357,7 @@
       "id": "q_053",
       "customer_question": "May I know how much is the implant ?",
       "source": "KHtanUK（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -1375,7 +1375,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 种植牙多少钱？"
     },
@@ -1383,7 +1383,7 @@
       "id": "q_054",
       "customer_question": "Can pls call me at 5.30. Thanks",
       "source": "KHtanUK（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1401,7 +1401,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1409,7 +1409,7 @@
       "id": "q_055",
       "customer_question": "English can ar??",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1427,7 +1427,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以说英文吗？"
     },
@@ -1435,7 +1435,7 @@
       "id": "q_056",
       "customer_question": "1 pre molar? teeth extracted 2 days ago.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1453,7 +1453,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 前磨牙，2天前拔的"
     },
@@ -1461,7 +1461,7 @@
       "id": "q_057",
       "customer_question": "I wish to gauge the prices for implant ... i have some information about implant",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -1479,7 +1479,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 想了解一下种植牙价格"
     },
@@ -1487,7 +1487,7 @@
       "id": "q_058",
       "customer_question": "May I ask does the price include bone graft ? Thank you.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -1505,7 +1505,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 价格包含植骨吗？"
     },
@@ -1513,7 +1513,7 @@
       "id": "q_059",
       "customer_question": "Sorry I do not know but I am asking because I am 60 years old.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1531,7 +1531,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1539,7 +1539,7 @@
       "id": "q_060",
       "customer_question": "Old bone old teeth ....",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1557,7 +1557,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1565,7 +1565,7 @@
       "id": "q_061",
       "customer_question": "My cbct scan for your consideration",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1583,7 +1583,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1591,7 +1591,7 @@
       "id": "q_062",
       "customer_question": "I have my cbct scan. May i forward it to you for your consideration.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1609,7 +1609,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我有CBCT扫描可以转发给你吗？"
     },
@@ -1617,7 +1617,7 @@
       "id": "q_063",
       "customer_question": "If no issue with my jaw bone, may i have your address for me to drop in for an examination",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -1635,7 +1635,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 如果骨头没问题，给我地址直接过来检查"
     },
@@ -1643,7 +1643,7 @@
       "id": "q_064",
       "customer_question": "I think last week or a week earlier",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1661,7 +1661,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1669,7 +1669,7 @@
       "id": "q_065",
       "customer_question": "It was a 3D 360 deg scan and i was told you need a certain software programe to open/view them after having extracted the files.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1687,7 +1687,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1695,7 +1695,7 @@
       "id": "q_066",
       "customer_question": "No advise yet. I saw Dr Wong who suggested that bridging instead of implant.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1713,7 +1713,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1721,7 +1721,7 @@
       "id": "q_067",
       "customer_question": "Waited for over 1.5 hrs and he only gave me no more that 10mins of his time but asked me to make another appointment if i wish to discuss further about implant.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -1739,7 +1739,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1747,7 +1747,7 @@
       "id": "q_068",
       "customer_question": "My internet is very slow this morning .... sorry but can you give me the physical address",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -1765,7 +1765,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以打给你吗？"
     },
@@ -1773,7 +1773,7 @@
       "id": "q_069",
       "customer_question": "Thanks.Thanks.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1791,7 +1791,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1799,7 +1799,7 @@
       "id": "q_070",
       "customer_question": "12pm?",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1817,7 +1817,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1825,7 +1825,7 @@
       "id": "q_071",
       "customer_question": "Ok. See you at 12pm today. Thanks 🙏",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1843,7 +1843,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的谢谢"
     },
@@ -1851,7 +1851,7 @@
       "id": "q_072",
       "customer_question": "My UK no.",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1869,7 +1869,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1877,7 +1877,7 @@
       "id": "q_073",
       "customer_question": "Yes",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1895,7 +1895,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1903,7 +1903,7 @@
       "id": "q_074",
       "customer_question": "10 mins ago",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1921,7 +1921,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1929,7 +1929,7 @@
       "id": "q_075",
       "customer_question": "Given them my IC and your no. 10% commission deducted fron your commission to me. 😃😃Given them my IC and your no. 10% commission deducted fron your commission to me. 😃😃",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -1947,7 +1947,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1955,7 +1955,7 @@
       "id": "q_076",
       "customer_question": "Have you forwared to cbct scan?",
       "source": "wong kar soon（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1973,7 +1973,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -1981,7 +1981,7 @@
       "id": "q_077",
       "customer_question": "wong kar soon",
       "source": "Johnny Lee（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -1999,7 +1999,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2007,7 +2007,7 @@
       "id": "q_078",
       "customer_question": "Hello! Can I get more info on this?",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -2025,7 +2025,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 你好，可以了解更多信息吗？"
     },
@@ -2033,7 +2033,7 @@
       "id": "q_079",
       "customer_question": "English Language or Bahasa Malaysia is ok.",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -2051,7 +2051,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 英文或马来文都可以"
     },
@@ -2059,7 +2059,7 @@
       "id": "q_080",
       "customer_question": "As shown on video yes, roughly a bit of knowledge on it.",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2077,7 +2077,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 从视频了解了一些"
     },
@@ -2085,7 +2085,7 @@
       "id": "q_081",
       "customer_question": "Ok.",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2103,7 +2103,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2111,7 +2111,7 @@
       "id": "q_082",
       "customer_question": "Ok. When is the appointment date?",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -2129,7 +2129,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 预约日期是什么时候？"
     },
@@ -2137,7 +2137,7 @@
       "id": "q_083",
       "customer_question": "Ohhhhh... I'm going for a Raya Open house at 11.00am in Klang. Can I visit after the open house?",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -2155,7 +2155,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2163,7 +2163,7 @@
       "id": "q_084",
       "customer_question": "Can I WhatsApp you after my open house visit.",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -2181,7 +2181,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2189,7 +2189,7 @@
       "id": "q_085",
       "customer_question": "I'm leaving for Klang now.",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2207,7 +2207,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2215,7 +2215,7 @@
       "id": "q_086",
       "customer_question": "Great...",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2233,7 +2233,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2241,7 +2241,7 @@
       "id": "q_087",
       "customer_question": "On the way from Klang",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2259,7 +2259,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2267,7 +2267,7 @@
       "id": "q_088",
       "customer_question": "Motorcycle parking?",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -2285,7 +2285,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2293,7 +2293,7 @@
       "id": "q_089",
       "customer_question": "Still awaiting your quote for the dentures",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2311,7 +2311,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 还在等假牙报价"
     },
@@ -2319,7 +2319,7 @@
       "id": "q_090",
       "customer_question": "No 💰💰💰",
       "source": "LEE WEE PENG（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2337,7 +2337,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2345,7 +2345,7 @@
       "id": "q_091",
       "customer_question": "Siw aik nam \n0166567954",
       "source": "Elaine（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2363,7 +2363,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2371,7 +2371,7 @@
       "id": "q_092",
       "customer_question": "Ampang",
       "source": "欣（客服：Amy Yuan）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2389,7 +2389,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2397,7 +2397,7 @@
       "id": "q_093",
       "customer_question": "LEE WEE PENG",
       "source": "欣（客服：Amy Yuan）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2415,7 +2415,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2423,7 +2423,7 @@
       "id": "q_094",
       "customer_question": "Elaine",
       "source": "Siew Peng Low（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2441,7 +2441,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2449,7 +2449,7 @@
       "id": "q_095",
       "customer_question": "otw",
       "source": "Siew Peng Low（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2467,7 +2467,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2475,7 +2475,7 @@
       "id": "q_096",
       "customer_question": "Evening～Location 🏠👆🏻pls🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -2493,7 +2493,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2501,7 +2501,7 @@
       "id": "q_097",
       "customer_question": "Morning～what is your operation🕰️👆🏻🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2519,7 +2519,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2527,7 +2527,7 @@
       "id": "q_098",
       "customer_question": "👆🏻your operation time pls🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2545,7 +2545,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 营业时间？"
     },
@@ -2553,7 +2553,7 @@
       "id": "q_099",
       "customer_question": "👆🏻your package's💲🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2571,7 +2571,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2579,7 +2579,7 @@
       "id": "q_100",
       "customer_question": "What's your Price if want to do filing a tooth & implant 1 tooth 🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -2597,7 +2597,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2605,7 +2605,7 @@
       "id": "q_101",
       "customer_question": "👆🏻for 2 teeth, any discount🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2623,7 +2623,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 种2颗有折扣吗？"
     },
@@ -2631,7 +2631,7 @@
       "id": "q_102",
       "customer_question": "Your promo ending when👆🏻🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2649,7 +2649,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 促销什么时候结束？"
     },
@@ -2657,7 +2657,7 @@
       "id": "q_103",
       "customer_question": "reserve 2 seats 2molo pls👆🏻🤔",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2675,7 +2675,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2683,7 +2683,7 @@
       "id": "q_104",
       "customer_question": "LOW SIEW PENG📱#018-233 0102👆🏻",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2701,7 +2701,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2709,7 +2709,7 @@
       "id": "q_105",
       "customer_question": "U book under my name for 2 seats 1st👆🏻",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -2727,7 +2727,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2735,7 +2735,7 @@
       "id": "q_106",
       "customer_question": "Pls apps me👆🏻apptmt notice too",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2753,7 +2753,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2761,7 +2761,7 @@
       "id": "q_107",
       "customer_question": "+-11.30am or 2.30pm",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2779,7 +2779,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2787,7 +2787,7 @@
       "id": "q_108",
       "customer_question": "2 seats👆🏻2molo 02/3/26 Mon pls",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2805,7 +2805,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2813,7 +2813,7 @@
       "id": "q_109",
       "customer_question": "Morning～otw👆🏻",
       "source": "9/4 Taat Pada Yang Satu（客服：Jestina Cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2831,7 +2831,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2839,7 +2839,7 @@
       "id": "q_110",
       "customer_question": "Harga berapa ?",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -2857,7 +2857,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 多少钱？"
     },
@@ -2865,7 +2865,7 @@
       "id": "q_111",
       "customer_question": "Geraham ?",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -2883,7 +2883,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 大牙？"
     },
@@ -2891,7 +2891,7 @@
       "id": "q_112",
       "customer_question": "Lokasi ?",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -2909,7 +2909,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 位置在哪？"
     },
@@ -2917,7 +2917,7 @@
       "id": "q_113",
       "customer_question": "Berapa harga ?",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -2935,7 +2935,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 多少钱？"
     },
@@ -2943,7 +2943,7 @@
       "id": "q_114",
       "customer_question": "Budget rm3k ?",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -2961,7 +2961,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 预算3千？"
     },
@@ -2969,7 +2969,7 @@
       "id": "q_115",
       "customer_question": "Sentul",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -2987,7 +2987,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -2995,7 +2995,7 @@
       "id": "q_116",
       "customer_question": "Last harga ?",
       "source": "Carson Services@卡森（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -3013,7 +3013,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 还能便宜吗？/ 最低价？"
     },
@@ -3021,7 +3021,7 @@
       "id": "q_117",
       "customer_question": "SS2",
       "source": "Maggie（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3039,7 +3039,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3047,7 +3047,7 @@
       "id": "q_118",
       "customer_question": "how much",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -3065,7 +3065,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 多少钱？"
     },
@@ -3073,7 +3073,7 @@
       "id": "q_119",
       "customer_question": "where is your location",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -3091,7 +3091,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 位置在哪？"
     },
@@ -3099,7 +3099,7 @@
       "id": "q_120",
       "customer_question": "no sat 11",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3117,7 +3117,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3125,7 +3125,7 @@
       "id": "q_121",
       "customer_question": "location pls",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -3143,7 +3143,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3151,7 +3151,7 @@
       "id": "q_122",
       "customer_question": "Carson\n01111111969",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3169,7 +3169,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3177,7 +3177,7 @@
       "id": "q_123",
       "customer_question": "postpone after lunch",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3195,7 +3195,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3203,7 +3203,7 @@
       "id": "q_124",
       "customer_question": "sunday u open?",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3221,7 +3221,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 周日开门吗？"
     },
@@ -3229,7 +3229,7 @@
       "id": "q_125",
       "customer_question": "slot in.sunday",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3247,7 +3247,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3255,7 +3255,7 @@
       "id": "q_126",
       "customer_question": "after lunch",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3273,7 +3273,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3281,7 +3281,7 @@
       "id": "q_127",
       "customer_question": "2omw",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3299,7 +3299,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3307,7 +3307,7 @@
       "id": "q_128",
       "customer_question": "2pm",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3325,7 +3325,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3333,7 +3333,7 @@
       "id": "q_129",
       "customer_question": "Tq",
       "source": "全口Chee Kok Hwa（客服：张玥）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3351,7 +3351,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3359,7 +3359,7 @@
       "id": "q_130",
       "customer_question": "English",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3377,7 +3377,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3385,7 +3385,7 @@
       "id": "q_131",
       "customer_question": "Implants teeth",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3403,7 +3403,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3411,7 +3411,7 @@
       "id": "q_132",
       "customer_question": "No",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3429,7 +3429,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3437,7 +3437,7 @@
       "id": "q_133",
       "customer_question": "4 months",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3455,7 +3455,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3463,7 +3463,7 @@
       "id": "q_134",
       "customer_question": "Pulled out",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3481,7 +3481,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3489,7 +3489,7 @@
       "id": "q_135",
       "customer_question": "Price",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -3507,7 +3507,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3515,7 +3515,7 @@
       "id": "q_136",
       "customer_question": "Inside got more",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3533,7 +3533,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3541,7 +3541,7 @@
       "id": "q_137",
       "customer_question": "I need to pull out all my teeth",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3559,7 +3559,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我得拔掉所有牙"
     },
@@ -3567,7 +3567,7 @@
       "id": "q_138",
       "customer_question": "Other teeth already start shaking",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3585,7 +3585,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3593,7 +3593,7 @@
       "id": "q_139",
       "customer_question": "After my accident",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3611,7 +3611,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3619,7 +3619,7 @@
       "id": "q_140",
       "customer_question": "My gum is not so strong",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3637,7 +3637,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 牙龈不太好了"
     },
@@ -3645,7 +3645,7 @@
       "id": "q_141",
       "customer_question": "25 years a go accident",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3663,7 +3663,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3671,7 +3671,7 @@
       "id": "q_142",
       "customer_question": "Location",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -3689,7 +3689,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3697,7 +3697,7 @@
       "id": "q_143",
       "customer_question": "Yes dear",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -3715,7 +3715,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3723,7 +3723,7 @@
       "id": "q_144",
       "customer_question": "Saturday are you open?",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3741,7 +3741,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 周六开门吗？"
     },
@@ -3749,7 +3749,7 @@
       "id": "q_145",
       "customer_question": "Saturday 3pm",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3767,7 +3767,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3775,7 +3775,7 @@
       "id": "q_146",
       "customer_question": "Magieswari",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3793,7 +3793,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3801,7 +3801,7 @@
       "id": "q_147",
       "customer_question": "@ Maggie",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3819,7 +3819,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3827,7 +3827,7 @@
       "id": "q_148",
       "customer_question": "Only WhatsApp",
       "source": "Be happy always 😊😊😊（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3845,7 +3845,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3853,7 +3853,7 @@
       "id": "q_149",
       "customer_question": "Chee Kok Hwa\n2/4/2026. 10am",
       "source": "Shawn Yow（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3871,7 +3871,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3879,7 +3879,7 @@
       "id": "q_150",
       "customer_question": "I was thinking to extract all my tooth to do this... How much will it cost me?",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -3897,7 +3897,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我想拔掉所有牙做种植，多少钱？"
     },
@@ -3905,7 +3905,7 @@
       "id": "q_151",
       "customer_question": "Most teeth is already shaking & missing a lot",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3923,7 +3923,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 大部分牙都松了，缺了很多"
     },
@@ -3931,7 +3931,7 @@
       "id": "q_152",
       "customer_question": "Few yrs ago",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -3949,7 +3949,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3957,7 +3957,7 @@
       "id": "q_153",
       "customer_question": "Earlier was thinking to do bridge work",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -3975,7 +3975,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -3983,7 +3983,7 @@
       "id": "q_154",
       "customer_question": "Where is your business location?",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -4001,7 +4001,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 你们位置在哪？"
     },
@@ -4009,7 +4009,7 @@
       "id": "q_155",
       "customer_question": "Kinrara",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4027,7 +4027,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4035,7 +4035,7 @@
       "id": "q_156",
       "customer_question": "But now help take care my grand kids in Melaka",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -4053,7 +4053,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4061,7 +4061,7 @@
       "id": "q_157",
       "customer_question": "Maybe next week Tuesday morning I be back to Puchong",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4079,7 +4079,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4087,7 +4087,7 @@
       "id": "q_158",
       "customer_question": "Yea can",
       "source": "Connie  已到院（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4105,7 +4105,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4113,7 +4113,7 @@
       "id": "q_159",
       "customer_question": "Sungai buloh",
       "source": "MD SOJIB SARKAR（客服：Kris teoh）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4131,7 +4131,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4139,7 +4139,7 @@
       "id": "q_160",
       "customer_question": "Do you do free check-up *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "YES! We offer free CBCT scan + doctor consultation (worth RM400+ elsewhere). No strings attached."
@@ -4157,7 +4157,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 有免费检查吗？"
     },
@@ -4165,7 +4165,7 @@
       "id": "q_161",
       "customer_question": "2\nWhere are you based at *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -4183,7 +4183,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 你们在哪里？"
     },
@@ -4191,7 +4191,7 @@
       "id": "q_162",
       "customer_question": "Old Klang Road, KL",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4209,7 +4209,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4217,7 +4217,7 @@
       "id": "q_163",
       "customer_question": "Can you send me the address and location please.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -4235,7 +4235,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以发地址和位置给我吗？"
     },
@@ -4243,7 +4243,7 @@
       "id": "q_164",
       "customer_question": "I am now in Malacca. Will come back only after Raya.\nBtw who am I speaking with *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4261,7 +4261,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 在马六甲，开斋节后回来"
     },
@@ -4269,7 +4269,7 @@
       "id": "q_165",
       "customer_question": "Ok, Tqvm",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4287,7 +4287,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4295,7 +4295,7 @@
       "id": "q_166",
       "customer_question": "So Tuesday 1pm confirm ya *?*\nIs it possible to make it at 12 noon, just an hour earlier, please *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -4313,7 +4313,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 周二1点确认？"
     },
@@ -4321,7 +4321,7 @@
       "id": "q_167",
       "customer_question": "If cannot, it's ok, I will be there by 1pm anyhow.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4339,7 +4339,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4347,7 +4347,7 @@
       "id": "q_168",
       "customer_question": "Thank you so much.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4365,7 +4365,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4373,7 +4373,7 @@
       "id": "q_169",
       "customer_question": "Can you please let me know, when I can get the picture, report and quotation, please *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4391,7 +4391,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -4399,7 +4399,7 @@
       "id": "q_170",
       "customer_question": "What is CBCT *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4417,7 +4417,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 CBCT是什么？"
     },
@@ -4425,7 +4425,7 @@
       "id": "q_171",
       "customer_question": "No need for that. I need to submit the picture and report to Kebajikan.\nConsultation already did the explanation.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -4443,7 +4443,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4451,7 +4451,7 @@
       "id": "q_172",
       "customer_question": "Would appreciate report with picture, please. Thank you.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4469,7 +4469,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4477,7 +4477,7 @@
       "id": "q_173",
       "customer_question": "TQVM",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4495,7 +4495,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4503,7 +4503,7 @@
       "id": "q_174",
       "customer_question": "Btw, who am I speaking with, please *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4521,7 +4521,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4529,7 +4529,7 @@
       "id": "q_175",
       "customer_question": "Just sent to my phone, I will print out and submit to Kebajikan.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4547,7 +4547,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4555,7 +4555,7 @@
       "id": "q_176",
       "customer_question": "Why, must go thru her, can't you sent *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4573,7 +4573,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4581,7 +4581,7 @@
       "id": "q_177",
       "customer_question": "Good Morning,\nI am still waiting for the pic and report. May I know why is it taking so long, please *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -4599,7 +4599,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 可以问一下"
     },
@@ -4607,7 +4607,7 @@
       "id": "q_178",
       "customer_question": "Thank you very much.\nMay I know, who is am speaking with, please *?*",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4625,7 +4625,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -4633,7 +4633,7 @@
       "id": "q_179",
       "customer_question": "Good Morning, till now no one has sent me the picture or report for submission. It's ok, I think I have wasted my time coming to your dental.\n\nI have spoken with T-care Dental at Bandar Puteri and they will do a CBCT and will give me a detailed report for submission by today after I visit them.",
       "source": "kellykheow（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4651,7 +4651,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4659,7 +4659,7 @@
       "id": "q_180",
       "customer_question": "Hi\nMy wisdom tooth has been growing for about a year now. It hurts a lot. Sometimes it hurts and it swells up a lot. What should I do now?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4677,7 +4677,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 智齿长了一年很痛肿起来怎么办？"
     },
@@ -4685,7 +4685,7 @@
       "id": "q_181",
       "customer_question": "Please provide the location of your clinic.",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -4703,7 +4703,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4711,7 +4711,7 @@
       "id": "q_182",
       "customer_question": "I have had this tooth problem for a long time and I want to remove this stain. How much will it cost?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -4729,7 +4729,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 牙的问题很久了，想去污渍多少钱？"
     },
@@ -4737,7 +4737,7 @@
       "id": "q_183",
       "customer_question": "Actually, I'm not that good at English or Malay. I'm talking to you through Google Translate. If I go to your place, I'll have to speak through Tangail there too. Please don't mind.",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4755,7 +4755,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4763,7 +4763,7 @@
       "id": "q_184",
       "customer_question": "I will go in the afternoon or tomorrow",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4781,7 +4781,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4789,7 +4789,7 @@
       "id": "q_185",
       "customer_question": "How much does it cost to make an appointment?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -4807,7 +4807,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 预约要多少钱？"
     },
@@ -4815,7 +4815,7 @@
       "id": "q_186",
       "customer_question": "Please wait i have no money arranged money after come",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4833,7 +4833,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4841,7 +4841,7 @@
       "id": "q_187",
       "customer_question": "Check up free treatment?.",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4859,7 +4859,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 检查免费治疗呢？"
     },
@@ -4867,7 +4867,7 @@
       "id": "q_188",
       "customer_question": "I'm coming now. Can I actually see a doctor now?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4885,7 +4885,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4893,7 +4893,7 @@
       "id": "q_189",
       "customer_question": "Then come around three.",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -4911,7 +4911,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4919,7 +4919,7 @@
       "id": "q_190",
       "customer_question": "Shall I come now?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4937,7 +4937,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4945,7 +4945,7 @@
       "id": "q_191",
       "customer_question": "sg besi",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -4963,7 +4963,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4971,7 +4971,7 @@
       "id": "q_192",
       "customer_question": "Can you give me the location of your clinic and I will do a graph search from here?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -4989,7 +4989,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -4997,7 +4997,7 @@
       "id": "q_193",
       "customer_question": "Where is your clinic?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -5015,7 +5015,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5023,7 +5023,7 @@
       "id": "q_194",
       "customer_question": "so how about the problem ? solve?",
       "source": "Ms Tham Choy Ling（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5041,7 +5041,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5049,7 +5049,7 @@
       "id": "q_195",
       "customer_question": "kelly kheow",
       "source": "水约Gan Nee Golden Harvest（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5067,7 +5067,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5075,7 +5075,7 @@
       "id": "q_196",
       "customer_question": "Slmt pg. Where the clinic bos?",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -5093,7 +5093,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 早安诊所在哪里老板？"
     },
@@ -5101,7 +5101,7 @@
       "id": "q_197",
       "customer_question": "Do u have clinic in shah alam?",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5119,7 +5119,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 在莎阿南有诊所吗？"
     },
@@ -5127,7 +5127,7 @@
       "id": "q_198",
       "customer_question": "I plan to go to your clinic for check up to install false teeth.\nWill ask the appointment some where next month.\nTq",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -5145,7 +5145,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 想去诊所检查装假牙"
     },
@@ -5153,7 +5153,7 @@
       "id": "q_199",
       "customer_question": "Upper 6\nLower 2\nroughly",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5171,7 +5171,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5179,7 +5179,7 @@
       "id": "q_200",
       "customer_question": "Rougly 2 yrs",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5197,7 +5197,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5205,7 +5205,7 @@
       "id": "q_201",
       "customer_question": "My age near 67",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -5223,7 +5223,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5231,7 +5231,7 @@
       "id": "q_202",
       "customer_question": "I need front teeths most to continue my career. 😀",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -5249,7 +5249,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我需要门牙继续工作"
     },
@@ -5257,7 +5257,7 @@
       "id": "q_203",
       "customer_question": "Yes. But not satisfied with their services. Pull out mostly painful. Maybe they not much skill i guess",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sorry to hear that! Let's do a free X-ray to check. Quick procedure with local anesthesia."
@@ -5275,7 +5275,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5283,7 +5283,7 @@
       "id": "q_204",
       "customer_question": "small bisnes",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5301,7 +5301,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5309,7 +5309,7 @@
       "id": "q_205",
       "customer_question": "commision agent",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5327,7 +5327,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5335,7 +5335,7 @@
       "id": "q_206",
       "customer_question": "can",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -5353,7 +5353,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5361,7 +5361,7 @@
       "id": "q_207",
       "customer_question": "u fix the time.",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5379,7 +5379,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5387,7 +5387,7 @@
       "id": "q_208",
       "customer_question": "okok",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5405,7 +5405,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5413,7 +5413,7 @@
       "id": "q_209",
       "customer_question": "Radhi bin Hashim\nIc 591007035423",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -5431,7 +5431,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5439,7 +5439,7 @@
       "id": "q_210",
       "customer_question": "Nice to meet u too dr",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5457,7 +5457,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5465,7 +5465,7 @@
       "id": "q_211",
       "customer_question": "ok. Tq",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5483,7 +5483,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的谢谢"
     },
@@ -5491,7 +5491,7 @@
       "id": "q_212",
       "customer_question": "Sorry boss. Had to cancel app tomorrow coz going outstation.",
       "source": "王总（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -5509,7 +5509,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 抱歉老板明天要出城取消预约"
     },
@@ -5517,7 +5517,7 @@
       "id": "q_213",
       "customer_question": "CHEN MEIYAN",
       "source": "HP Lim（客服：siow feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5535,7 +5535,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5543,7 +5543,7 @@
       "id": "q_214",
       "customer_question": "Can arrange a consultation?",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -5561,7 +5561,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以安排咨询吗？"
     },
@@ -5569,7 +5569,7 @@
       "id": "q_215",
       "customer_question": "Monday 9 March",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -5587,7 +5587,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 3月9日星期一"
     },
@@ -5595,7 +5595,7 @@
       "id": "q_216",
       "customer_question": "Lim Hik Peng",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -5613,7 +5613,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5621,7 +5621,7 @@
       "id": "q_217",
       "customer_question": "Address?",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -5639,7 +5639,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 地址？"
     },
@@ -5647,7 +5647,7 @@
       "id": "q_218",
       "customer_question": "I’m scheduled on Monday -preferably Menjalara?",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -5665,7 +5665,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5673,7 +5673,7 @@
       "id": "q_219",
       "customer_question": "Hi There!",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -5691,7 +5691,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5699,7 +5699,7 @@
       "id": "q_220",
       "customer_question": "On my way ya",
       "source": "Gilbert Tan（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5717,7 +5717,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5725,7 +5725,7 @@
       "id": "q_221",
       "customer_question": "How much is your dental implant including zirconia crown?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -5743,7 +5743,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 种植牙含全瓷冠多少钱？"
     },
@@ -5751,7 +5751,7 @@
       "id": "q_222",
       "customer_question": "What brand is it?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We use Osstem (Korean brand) + Zirconia crown. Same quality as RM6K clinics at RM3,980."
@@ -5769,7 +5769,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 是什么品牌的？"
     },
@@ -5777,7 +5777,7 @@
       "id": "q_223",
       "customer_question": "How many years of experience does the dentist have in dental implants treatment?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -5795,7 +5795,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 医生做种植牙有多少年经验？"
     },
@@ -5803,7 +5803,7 @@
       "id": "q_224",
       "customer_question": "Oh, I thought Dr Daniel is working in Drs Wong and Partners?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -5821,7 +5821,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 哦，我以为Dr Daniel在Drs Wong工作？"
     },
@@ -5829,7 +5829,7 @@
       "id": "q_225",
       "customer_question": "I met him before",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -5847,7 +5847,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我之前见过他"
     },
@@ -5855,7 +5855,7 @@
       "id": "q_226",
       "customer_question": "I had a consultation with him",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -5873,7 +5873,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 我之前咨询过他"
     },
@@ -5881,7 +5881,7 @@
       "id": "q_227",
       "customer_question": "Ok, so I can come here for consultation?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -5899,7 +5899,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 好的，那我可以来咨询吗？"
     },
@@ -5907,7 +5907,7 @@
       "id": "q_228",
       "customer_question": "May I know what's your promotion price?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -5925,7 +5925,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -5933,7 +5933,7 @@
       "id": "q_229",
       "customer_question": "How about next weekend?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5951,7 +5951,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 下周末怎么样？"
     },
@@ -5959,7 +5959,7 @@
       "id": "q_230",
       "customer_question": "Tan Eng Yew",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -5977,7 +5977,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -5985,7 +5985,7 @@
       "id": "q_231",
       "customer_question": "Afternoon 2pm",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6003,7 +6003,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6011,7 +6011,7 @@
       "id": "q_232",
       "customer_question": "Is scaling included?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6029,7 +6029,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 包含洗牙吗？"
     },
@@ -6037,7 +6037,7 @@
       "id": "q_233",
       "customer_question": "How much is sinus uplift and bone grafting?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6055,7 +6055,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 鼻窦提升和植骨多少钱？"
     },
@@ -6063,7 +6063,7 @@
       "id": "q_234",
       "customer_question": "May I know if you are located in Puchong?",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -6081,7 +6081,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 在蒲种吗？"
     },
@@ -6089,7 +6089,7 @@
       "id": "q_235",
       "customer_question": "Great 👍",
       "source": "ClementGBS（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6107,7 +6107,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6115,7 +6115,7 @@
       "id": "q_236",
       "customer_question": "3 - price for implant package and how long it how many visits it takes to complete 1 implant",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -6133,7 +6133,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 种植套餐价格多少？"
     },
@@ -6141,7 +6141,7 @@
       "id": "q_237",
       "customer_question": "my left side no teeth, thinking to do 2 implant and bridging.\nmy left side no teeth, thinking to do 2 implant and bridging.",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -6159,7 +6159,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 左边没牙了，想做2颗种植加牙桥"
     },
@@ -6167,7 +6167,7 @@
       "id": "q_238",
       "customer_question": "Many years,  I think more than 10 years.",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -6185,7 +6185,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6193,7 +6193,7 @@
       "id": "q_239",
       "customer_question": "Yes, I just want to know the estimated cost before proceed. If can't afford,  then will probably consider denture only",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6211,7 +6211,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -6219,7 +6219,7 @@
       "id": "q_240",
       "customer_question": "Ok, in that case.  Can I make appointment for next Saturday?Ok, in that case.  Can I make appointment for next Saturday?",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -6237,7 +6237,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以约下周六吗？"
     },
@@ -6245,7 +6245,7 @@
       "id": "q_241",
       "customer_question": "Subang JayaSubang Jaya",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6263,7 +6263,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6271,7 +6271,7 @@
       "id": "q_242",
       "customer_question": "Just reached, coming up now",
       "source": "28/2 Mahmoud（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6289,7 +6289,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6297,7 +6297,7 @@
       "id": "q_243",
       "customer_question": "English please?😁",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -6315,7 +6315,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 请说英文"
     },
@@ -6323,7 +6323,7 @@
       "id": "q_244",
       "customer_question": "Can I know the cost for a single tooth implant?",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6341,7 +6341,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 单颗种植牙多少钱？"
     },
@@ -6349,7 +6349,7 @@
       "id": "q_245",
       "customer_question": "1 tooth. 5 months ago",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6367,7 +6367,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 1颗牙，5个月前"
     },
@@ -6375,7 +6375,7 @@
       "id": "q_246",
       "customer_question": "Nope.",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6393,7 +6393,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6401,7 +6401,7 @@
       "id": "q_247",
       "customer_question": "Thank you so much for your kind offer. But I still need to know the cost as I currently has no income and not working. Fully depending on my retirement funds. I hope you can understand.",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6419,7 +6419,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以问一下"
     },
@@ -6427,7 +6427,7 @@
       "id": "q_248",
       "customer_question": "If I can't afford it. There's no point for me to waste your time and effort.",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -6445,7 +6445,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6453,7 +6453,7 @@
       "id": "q_249",
       "customer_question": "Thank you. Is the price same across for the different type of teeth?",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6471,7 +6471,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6479,7 +6479,7 @@
       "id": "q_250",
       "customer_question": "Noted. May I know the exact location of your clinic?",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -6497,7 +6497,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 诊所具体位置在哪？"
     },
@@ -6505,7 +6505,7 @@
       "id": "q_251",
       "customer_question": "https://maps.app.goo.gl/7SiPCAepsuQupTTPA?g_st",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6523,7 +6523,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6531,7 +6531,7 @@
       "id": "q_252",
       "customer_question": "Is this your clinic?",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -6549,7 +6549,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6557,7 +6557,7 @@
       "id": "q_253",
       "customer_question": "I'm sure you do filling as well right?",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6575,7 +6575,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6583,7 +6583,7 @@
       "id": "q_254",
       "customer_question": "How much do you charge for filling?",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6601,7 +6601,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 补牙多少钱？"
     },
@@ -6609,7 +6609,7 @@
       "id": "q_255",
       "customer_question": "Actually I have a dental appointment this morning at 10.30am.",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -6627,7 +6627,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6635,7 +6635,7 @@
       "id": "q_256",
       "customer_question": "Nearby my house",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -6653,7 +6653,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6661,7 +6661,7 @@
       "id": "q_257",
       "customer_question": "Ok. I'll come at 11am appointment. 10am is too rush for me.",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -6679,7 +6679,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6687,7 +6687,7 @@
       "id": "q_258",
       "customer_question": "Noted. I'll try to be early if possible",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -6705,7 +6705,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6713,7 +6713,7 @@
       "id": "q_259",
       "customer_question": "I'm reaching soon",
       "source": "Abg Boya（客服：李仪）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -6731,7 +6731,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6739,7 +6739,7 @@
       "id": "q_260",
       "customer_question": "Hello",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -6757,7 +6757,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6765,7 +6765,7 @@
       "id": "q_261",
       "customer_question": "How much is one teeth implant",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup."
@@ -6783,7 +6783,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 种一颗牙多少钱？"
     },
@@ -6791,7 +6791,7 @@
       "id": "q_262",
       "customer_question": "And type of plant is used",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6809,7 +6809,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6817,7 +6817,7 @@
       "id": "q_263",
       "customer_question": "Thanka for the info",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Welcome! Are you looking for dental implants or general check-up? We offer free CBCT scan at Puchong PFCC."
@@ -6835,7 +6835,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6843,7 +6843,7 @@
       "id": "q_264",
       "customer_question": "May i schedule for consultation?",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Of course! What time works for you? We're open 10am-7pm daily. Free check-up included."
@@ -6861,7 +6861,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 可以预约咨询吗？"
     },
@@ -6869,7 +6869,7 @@
       "id": "q_265",
       "customer_question": "I am free today or tmr",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6887,7 +6887,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6895,7 +6895,7 @@
       "id": "q_266",
       "customer_question": "3pm \nName is Mahmoud Mohamed",
       "source": "謝志安（客服：xiao feng）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -6913,7 +6913,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6921,7 +6921,7 @@
       "id": "q_267",
       "customer_question": "nama saya akbar,\numur 39 tahun,\nsaya nak cabut gigi atas bawah semua,dn nak pasang mcm yg kamu iklan kn d fb tu",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -6939,7 +6939,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6947,7 +6947,7 @@
       "id": "q_268",
       "customer_question": "mcm ni,brapa bajet ya atas bawah",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -6965,7 +6965,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6973,7 +6973,7 @@
       "id": "q_269",
       "customer_question": "klau cabut gigi barapa harga",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -6991,7 +6991,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -6999,7 +6999,7 @@
       "id": "q_270",
       "customer_question": "ok,send location kmu,nnti ada masa saya trus dtg",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7017,7 +7017,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 发位置有空就过去"
     },
@@ -7025,7 +7025,7 @@
       "id": "q_271",
       "customer_question": "blom ada,",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7043,7 +7043,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7051,7 +7051,7 @@
       "id": "q_272",
       "customer_question": "ahad kamu buka ks",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -7069,7 +7069,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7077,7 +7077,7 @@
       "id": "q_273",
       "customer_question": "slalu nya ahad saya cuti",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7095,7 +7095,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7103,7 +7103,7 @@
       "id": "q_274",
       "customer_question": "tp ndak pa pa ka,sbb saya puasa",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7121,7 +7121,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7129,7 +7129,7 @@
       "id": "q_275",
       "customer_question": "kjap sya tnya bos ku dlu,",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7147,7 +7147,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7155,7 +7155,7 @@
       "id": "q_276",
       "customer_question": "jdi senang,dia sudah tau sya mau temu janji gigi",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7173,7 +7173,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7181,7 +7181,7 @@
       "id": "q_277",
       "customer_question": "ok boleh,sda saya tnya bos dea ckp boleh",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7199,7 +7199,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7207,7 +7207,7 @@
       "id": "q_278",
       "customer_question": "sudah bos ku izin kn",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7225,7 +7225,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7233,7 +7233,7 @@
       "id": "q_279",
       "customer_question": "ok ble",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -7251,7 +7251,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7259,7 +7259,7 @@
       "id": "q_280",
       "customer_question": "bkn ahad ni tanggal 1 ka",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7277,7 +7277,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7285,7 +7285,7 @@
       "id": "q_281",
       "customer_question": "nama AKBAR KALANG,\numur 39 Tahun,",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Sure! I can assist in English. What dental concern are you facing? Free check-up with CBCT available."
@@ -7303,7 +7303,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7311,7 +7311,7 @@
       "id": "q_282",
       "customer_question": "jdi perlu ka saya berpuasa",
       "source": "Elizasoo（客服：任小琼）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7329,7 +7329,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7337,7 +7337,7 @@
       "id": "q_283",
       "customer_question": "Location please",
       "source": "Nava（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -7355,7 +7355,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 请给位置"
     },
@@ -7363,7 +7363,7 @@
       "id": "q_284",
       "customer_question": "Sorry .boleh bahasa malay",
       "source": "Nava（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7381,7 +7381,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 可以说马来文吗？"
     },
@@ -7389,7 +7389,7 @@
       "id": "q_285",
       "customer_question": "Boleh",
       "source": "Nava（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊"
@@ -7407,7 +7407,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇲🇾 可以"
     },
@@ -7415,7 +7415,7 @@
       "id": "q_286",
       "customer_question": "Cheras bt 10",
       "source": "Nava（客服：jestina cheong）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -7433,7 +7433,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7441,7 +7441,7 @@
       "id": "q_287",
       "customer_question": "Cheah Chee Onn",
       "source": "Table_40（客服：）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -7459,7 +7459,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7467,7 +7467,7 @@
       "id": "q_288",
       "customer_question": "Soo yock hong",
       "source": "Table_41（客服：）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -7485,7 +7485,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     },
@@ -7493,7 +7493,7 @@
       "id": "q_289",
       "customer_question": "Where is your location, I want to make a visit",
       "source": "Table_42（客服：）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "We're at Puchong PFCC. Address: NO.1-F 1st Floor Tower 4&5 @ PFCC. Free shuttle available!"
@@ -7511,7 +7511,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": "🇬🇧 位置在哪？"
     },
@@ -7519,7 +7519,7 @@
       "id": "q_290",
       "customer_question": "Ik",
       "source": "Table_43（客服：）",
-      "status": "trained",
+      "status": "pending",
       "answers": [
         {
           "text": "Let me understand your situation. What dental issue are you facing? Free assessment available."
@@ -7537,7 +7537,7 @@
           "text": ""
         }
       ],
-      "best_answer_index": 0,
+      "best_answer_index": null,
       "created_at": "2026-05-15T20:09:56.082302+08:00",
       "notes": ""
     }
