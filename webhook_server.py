@@ -263,6 +263,97 @@ def webhook():
     elif et == "whatsapp.message.updated": handle_outbound(d.get("whatsappMessage",{}))
     return jsonify({"status":"ok"}), 200
 
+def generate_training_scripts(text):
+    """为新客户问题自动生成3条建议话术"""
+    t = text.lower().strip()
+    
+    # 马来文
+    if any(w in t for w in ['selamat','saya','anda','boleh','gigi','tanam','harga','klinik','percuma','melayu','bahasa']):
+        return [
+            "Selamat sejahtera! Ada apa-apa yang kami boleh bantu? Kami ada pemeriksaan PERCUMA termasuk CBCT scan. Klinik kami pakar implan gigi di Puchong PFCC. 😊",
+            "Jom dtg pemeriksaan percuma dulu. Doctor akan check dan bagi tau option yg sesuai. Takde kewajipan langsung. Lepas tu baru bincang harga dan plan.",
+            "InsyaAllah kami boleh bantu. Pemeriksaan PERCUMA dulu, lepas tu baru kita tengok dan buat keputusan. Takpe kalau tak jadi pun. 😊"
+        ]
+    
+    # 英文 - price
+    if any(w in t for w in ['how much','cost','price','rm','rate','fee','ching']):
+        return [
+            "We have a promo: RM3,980 per implant (orig RM6K), inclusive of CBCT, implant, crown & whole life free checkup. Free consultation first!",
+            "Same Korean implant brand (Osstem) that other clinics charge RM6K-8K for. We offer RM3,980 all-in because we're a specialist clinic.",
+            "Come for a free check-up first, get a proper assessment and exact quote, then decide. No obligation 😊"
+        ]
+    
+    if any(w in t for w in ['location','where','address','lokasi','附近']):
+        return [
+            "Kami di Puchong PFCC, NO.1-F Tower 4&5@PFCC. Free shuttle! Which area are you from?",
+            "📍 PFCC Puchong (near MRT). We provide free pickup service.",
+            "Let me know your area and I can arrange pickup for your free check-up visit 😊"
+        ]
+    
+    if any(w in t for w in ['appointment','schedule','book','consultation','temujanji','预约']):
+        return [
+            "Of course! What time works for you? Open 10am-7pm daily. Free check-up included.",
+            "Sure! May I have your name and contact to reserve a slot? Free CBCT + consultation available.",
+            "Let me help you book! We offer free check-up with CBCT scan and doctor consultation."
+        ]
+    
+    if any(w in t for w in ['english','please','pls','can ar']):
+        return [
+            "Sure! I can assist in English. What dental concern? Free check-up with CBCT available. 😊",
+            "Happy to help in English! We specialize in dental implants at Puchong PFCC.",
+            "No problem, I'll continue in English. May I know your dental issue? Free consultation here!"
+        ]
+    
+    if any(w in t for w in ['wisdom','pain','hurt','swell','sakit','痛','疼','肿','疼']):
+        return [
+            "Sorry to hear! Let's do a free X-ray to check the tooth position. Quick procedure with local anesthesia.",
+            "Don't suffer! Free check-up + X-ray to see what's happening. Removal is quick and manageable.",
+            "Let's take a look first. Free CBCT scan to assess. You'll know what to do after that."
+        ]
+    
+    if any(w in t for w in ['free check','percuma','免费']):
+        return [
+            "YES! We offer free CBCT scan + doctor consultation (worth RM400+ elsewhere). No strings attached.",
+            "Absolutely free! Full mouth CBCT, doctor examination, treatment plan discussion. Would you like to book?",
+            "Free check-up includes CBCT panoramic X-ray + doctor consultation. Come and find out your options 😊"
+        ]
+    
+    if any(w in t for w in ['hello','hi','hai','您好','你好','info']):
+        return [
+            "Welcome! Are you looking for dental implants or general check-up? Free CBCT scan at Puchong PFCC.",
+            "Hello! Free consultation available 😊 What can I help you with today?",
+            "Hi there! Let me know your dental concern. We specialize in implants at Puchong PFCC."
+        ]
+    
+    # 中文 - 价格
+    if re.search(r'[\u4e00-\u9fff]', text):
+        if any(w in t for w in ['多少','价格','费用','贵','多少钱']):
+            return [
+                "先问一下您的情况：缺了几颗牙？在哪个位置？缺了多久了？不同情况方案和价格不一样。",
+                "我们现在活动价RM3,980一颗全包（种植体+基台+牙冠+CBCT）。外面市场价RM6,000-8,000。",
+                "先来做个免费检查，医生看了情况出方案和准确报价，了解清楚再决定😊"
+            ]
+        if any(w in t for w in ['种','植','牙','牙套','牙桥']):
+            return [
+                "种植牙独立种在牙槽骨里，不磨好牙，咀嚼力恢复90%以上，保养好可以用几十年。",
+                "我们有免费CBCT检查，先来拍片看看骨头条件，再定最适合的方案。",
+                "您方便过来做个免费检查吗？医生当面给您分析，比文字沟通清楚多啦😊"
+            ]
+        # 其他中文
+        return [
+            "先帮您了解一下具体情况。什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？",
+            "我们有免费CBCT检查+医生面诊，先来看看了解清楚，再决定做不做😊",
+            "别担心，先来免费检查了解情况。医生会帮您全面评估，给最适合的方案建议。"
+        ]
+    
+    # 英文默认
+    return [
+        "Let me understand your situation. What dental issue are you facing? Free assessment available.",
+        "Come for a free CBCT scan + doctor consultation. We'll give you a clear plan and quote.",
+        "No pressure, just come for a free check-up first. Understand your options, then decide 😊"
+    ]
+
+
 def handle_inbound(msg):
     msg_type = msg.get("type","")
     p = msg.get("from",""); n = msg.get("customerProfile",{}).get("name","")
@@ -310,14 +401,18 @@ def handle_inbound(msg):
                     break
             if not dup:
                 nid = f"q_{len(td['training_pairs']) + 1:03d}"
+                scripts = generate_training_scripts(c.strip())
+                while len(scripts) < 5:
+                    scripts.append("")
+                answers = [{"text": s} for s in scripts]
                 td["training_pairs"].append({
                     "id": nid, "customer_question": c.strip(),
                     "source": f"客户 {tag}", "status": "pending",
-                    "answers": [], "best_answer_index": None,
+                    "answers": answers, "best_answer_index": None,
                     "created_at": bj_now().isoformat(), "notes": "自动记录"
                 })
                 save_training_data(td)
-                log.info(f"📚 已加入培训: {nid} - {c[:50]}")
+                log.info(f"📚 已加入培训: {nid} - {c[:50]} (含3条推荐话术)")
         except Exception as e:
             log.error(f"培训记录失败: {e}")
     log.info(f"📩 {tag}: {c[:60]}")
