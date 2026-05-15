@@ -784,9 +784,9 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .stat-card .num{font-size:26px;font-weight:700;color:#60a5fa}
 .stat-card .label{font-size:11px;color:#94a3b8;margin-top:2px}
 .last-upd{font-size:11px;color:#64748b;margin-bottom:16px}
-.content{display:flex;gap:20px;flex:1;overflow:hidden}
-.board-col{flex:1;overflow-y:auto;padding-right:8px}
-.board{display:flex;flex-direction:column;gap:14px}
+.content{display:flex;gap:20px;flex:1;overflow:hidden;align-items:flex-start}
+.board-col{flex:1;overflow-y:auto;padding-right:8px;height:100%}
+.board{display:flex;flex-direction:column;gap:14px;padding-bottom:60px}
 .card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155;transition:border-color .2s;cursor:pointer}
 .card:hover{border-color:#475569}
 .card.active{border-color:#60a5fa}
@@ -806,13 +806,13 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .status-badge{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:500;margin-left:8px}
 .status-pending{background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40}
 .status-trained{background:#22c55e20;color:#22c55e;border:1px solid #22c55e40}
-.form-panel{width:380px;display:flex;flex-direction:column;gap:14px}
+.form-panel{width:380px;display:flex;flex-direction:column;gap:14px;position:sticky;top:20px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto;flex-shrink:0}
 .form-panel h3{font-size:15px;color:#e2e8f0;padding-bottom:8px;border-bottom:1px solid #334155}
 .form-panel .q-preview{font-size:12px;color:#94a3b8;background:#0f172a;padding:10px;border-radius:8px;line-height:1.5;max-height:80px;overflow-y:auto}
-.form-panel label{font-size:11px;color:#94a3b8;font-weight:600}
-.form-panel textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:10px;font-size:13px;font-family:-apple-system,system-ui,sans-serif;resize:vertical;min-height:60px;outline:none;transition:border-color .2s}
+.form-panel label{font-size:13px;color:#94a3b8;font-weight:600;padding-top:4px}
+.form-panel textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:12px;font-size:14px;font-family:-apple-system,system-ui,sans-serif;resize:vertical;min-height:80px;outline:none;transition:border-color .2s;line-height:1.5}
 .form-panel textarea:focus{border-color:#60a5fa}
-.form-panel .btn{background:#2563eb;border:none;border-radius:8px;color:#fff;padding:12px;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}
+.form-panel .btn{background:#2563eb;border:none;border-radius:10px;color:#fff;padding:16px 24px;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;width:100%;letter-spacing:0.5px}
 .form-panel .btn:hover{background:#1d4ed8}
 .form-panel .btn:disabled{background:#334155;color:#64748b;cursor:not-allowed}
 .form-panel .msg{font-size:11px;padding:8px 12px;border-radius:6px;display:none}
