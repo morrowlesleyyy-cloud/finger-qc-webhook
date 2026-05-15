@@ -753,12 +753,16 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 <div style=font-size:11px;color:#64748b>点击左侧待培训问题开始编辑</div>
 <div class=q-preview id=qPreview style=display:none></div>
 <div id=answerFields style=display:none>
-<label>话术 1</label>
+<label>话术 1 🖐️</label>
 <textarea id=a1 placeholder="第一条话术..."></textarea>
-<label>话术 2</label>
+<label>话术 2 🖐️</label>
 <textarea id=a2 placeholder="第二条话术..."></textarea>
-<label>话术 3</label>
+<label>话术 3 🖐️</label>
 <textarea id=a3 placeholder="第三条话术..."></textarea>
+<label>话术 4 📝</label>
+<textarea id=a4 placeholder="第四条话术（待补充）"></textarea>
+<label>话术 5 📝</label>
+<textarea id=a5 placeholder="第五条话术（待补充）"></textarea>
 <button class=btn id=btnSubmit onclick=submitTraining()>💾 提交培训</button>
 <div class=msg id=formMsg></div>
 </div>
@@ -818,10 +822,14 @@ function selectQuestion(id){
     document.getElementById('a1').value=q.answers[0]?q.answers[0].text:'';
     document.getElementById('a2').value=q.answers[1]?q.answers[1].text:'';
     document.getElementById('a3').value=q.answers[2]?q.answers[2].text:'';
+    document.getElementById('a4').value=q.answers[3]?q.answers[3].text:'';
+    document.getElementById('a5').value=q.answers[4]?q.answers[4].text:'';
   }else{
     document.getElementById('a1').value='';
     document.getElementById('a2').value='';
     document.getElementById('a3').value='';
+    document.getElementById('a4').value='';
+    document.getElementById('a5').value='';
   }
   document.getElementById('formMsg').style.display='none';
 }
@@ -836,14 +844,16 @@ async function submitTraining(){
   var a1=document.getElementById('a1').value.trim();
   var a2=document.getElementById('a2').value.trim();
   var a3=document.getElementById('a3').value.trim();
-  if(!a1&&!a2&&!a3){showMsg('请至少填写一条话术','err');return}
+  var a4=document.getElementById('a4').value.trim();
+  var a5=document.getElementById('a5').value.trim();
+  if(!a1&&!a2&&!a3&&!a4&&!a5){showMsg('请至少填写一条话术','err');return}
   var btn=document.getElementById('btnSubmit');
   btn.disabled=true;btn.textContent='⏳ 提交中...';
   try{
     var resp=await fetch('/api/training/train'+qp(),{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({id:selectedId,answers:[a1,a2,a3].filter(function(a){return a}),best_index:0})
+      body:JSON.stringify({id:selectedId,answers:[a1,a2,a3,a4,a5].filter(function(a){return a}),best_index:0})
     });
     if(!resp.ok)throw Error('提交失败');
     showMsg('✅ 培训完成！问题 #'+selectedId+' 已标记为已培训','ok');
@@ -912,7 +922,7 @@ def training_train():
             break
     if not found:
         return jsonify({"error": "not found"}), 404
-    found["answers"] = [{"text": a} for a in answers[:3]]
+    found["answers"] = [{"text": a} for a in answers[:5]]
     found["best_answer_index"] = best_idx if best_idx is not None else (0 if answers else None)
     found["status"] = "trained"
     save_training_data(data)

@@ -3,14 +3,2240 @@
   "training_pairs": [
     {
       "id": "q_001",
-      "customer_question": "我拔掉一颗大牙，补回需要多少钱？",
-      "source": "客户 daniel1688",
-      "status": "pending",
-      "answers": [],
-      "best_answer_index": null,
-      "created_at": "2026-05-14T10:05:00+08:00",
-      "notes": "客户已拔牙，询问补牙/种牙费用"
+      "customer_question": "Tee Huey Chyun 012-7232772",
+      "source": "Tee Huey Chyun（客服：Mia）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_002",
+      "customer_question": "English plss",
+      "source": "lan（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 请说英文"
+    },
+    {
+      "id": "q_003",
+      "customer_question": "Whereabout ur location",
+      "source": "lan（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 位置在哪？"
+    },
+    {
+      "id": "q_004",
+      "customer_question": "Can. I cal u",
+      "source": "lan（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 可以打给你吗？"
+    },
+    {
+      "id": "q_005",
+      "customer_question": "Great can we fix on 24 April 3pm",
+      "source": "Brian Thiaga Wisdom （客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 太好了，约4月24日下午3点？"
+    },
+    {
+      "id": "q_006",
+      "customer_question": "Dr Brian Thiaga",
+      "source": "Brian Thiaga Wisdom （客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_007",
+      "customer_question": "Cyberjaya",
+      "source": "Brian Thiaga Wisdom （客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 赛城"
+    },
+    {
+      "id": "q_008",
+      "customer_question": "Location, cost",
+      "source": "kokyewng（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况：具体是哪个位置的问题？有多久了？不同情况方案和费用不一样。我们有免费CBCT检查+医生面诊建议。"
+        },
+        {
+          "text": "我们目前有优惠活动，可以享受免费口腔检查。先来拍片看看具体情况，医生会给您出方案和准确报价。"
+        },
+        {
+          "text": "我理解您关心价格的心情。建议先来免费检查，了解清楚自己的情况再做决定。检查和咨询都是免费的😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 位置和价格？"
+    },
+    {
+      "id": "q_009",
+      "customer_question": "Yes go ahead and explain",
+      "source": "kokyewng（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 好的请说"
+    },
+    {
+      "id": "q_010",
+      "customer_question": "Extracted 6 months ago",
+      "source": "kokyewng（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 拔牙6个月了"
+    },
+    {
+      "id": "q_011",
+      "customer_question": "Location?",
+      "source": "Yik Tien Diew（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 位置在哪？"
+    },
+    {
+      "id": "q_012",
+      "customer_question": "Whom am I chatting with?",
+      "source": "Yik Tien Diew（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 我在跟谁聊？"
+    },
+    {
+      "id": "q_013",
+      "customer_question": "Hi cici ,  May I know how is the implant done? Do you have video?",
+      "source": "Yik Tien Diew（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 可以问一下"
+    },
+    {
+      "id": "q_014",
+      "customer_question": "May l make an appointment today afternoon for checking n consulting my teeth problem?",
+      "source": "MR CHAI LEK（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "当然可以！请问您想预约什么时间？上午还是下午？我们工作日和周末都开门（10am-7pm）。我帮您安排。"
+        },
+        {
+          "text": "好的，我来帮您预约。请问您方便什么时间到访？我们提供免费检查，可以先过来了解情况。请给我您的姓名和电话。"
+        },
+        {
+          "text": "没问题！我帮您安排时间。需要留下您的姓名和联系方式，我好帮您预约登记😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 可以预约今天下午检查牙齿吗？"
+    },
+    {
+      "id": "q_015",
+      "customer_question": "Ok thanks 👍",
+      "source": "MR CHAI LEK（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 好的谢谢"
+    },
+    {
+      "id": "q_016",
+      "customer_question": "Yik Tien Diew",
+      "source": "MR CHAI LEK（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_017",
+      "customer_question": "All teeth still there, except worn of due to grinding/ clenching",
+      "source": "Julia Lim（客服：Victoria Foo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 牙齿还在但磨耗严重"
+    },
+    {
+      "id": "q_018",
+      "customer_question": "Share your location pls.",
+      "source": "Julia Lim（客服：Victoria Foo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 请分享位置"
+    },
+    {
+      "id": "q_019",
+      "customer_question": "Can I come next Monday 2pm..",
+      "source": "Julia Lim（客服：Victoria Foo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 下周一2点可以来吗？"
+    },
+    {
+      "id": "q_020",
+      "customer_question": "Hi can we communicate in English 😂",
+      "source": "KHtanUK（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 可以用英文沟通吗？"
+    },
+    {
+      "id": "q_021",
+      "customer_question": "May I know how much is the implant ?",
+      "source": "KHtanUK（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 种植牙多少钱？"
+    },
+    {
+      "id": "q_022",
+      "customer_question": "Can pls call me at 5.30. Thanks",
+      "source": "KHtanUK（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_023",
+      "customer_question": "English can ar??",
+      "source": "wong kar soon（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 可以说英文吗？"
+    },
+    {
+      "id": "q_024",
+      "customer_question": "1 pre molar? teeth extracted 2 days ago.",
+      "source": "wong kar soon（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 前磨牙，2天前拔的"
+    },
+    {
+      "id": "q_025",
+      "customer_question": "I wish to gauge the prices for implant ... i have some information about implant",
+      "source": "wong kar soon（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 想了解一下种植牙价格"
+    },
+    {
+      "id": "q_026",
+      "customer_question": "wong kar soon",
+      "source": "Johnny Lee（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_027",
+      "customer_question": "English Language or Bahasa Malaysia is ok.",
+      "source": "LEE WEE PENG（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 英文或马来文都可以"
+    },
+    {
+      "id": "q_028",
+      "customer_question": "As shown on video yes, roughly a bit of knowledge on it.",
+      "source": "LEE WEE PENG（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 从视频了解了一些"
+    },
+    {
+      "id": "q_029",
+      "customer_question": "Ok. When is the appointment date?",
+      "source": "LEE WEE PENG（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "当然可以！请问您想预约什么时间？上午还是下午？我们工作日和周末都开门（10am-7pm）。我帮您安排。"
+        },
+        {
+          "text": "好的，我来帮您预约。请问您方便什么时间到访？我们提供免费检查，可以先过来了解情况。请给我您的姓名和电话。"
+        },
+        {
+          "text": "没问题！我帮您安排时间。需要留下您的姓名和联系方式，我好帮您预约登记😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 预约日期是什么时候？"
+    },
+    {
+      "id": "q_030",
+      "customer_question": "Siw aik nam  0166567954",
+      "source": "Elaine（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_031",
+      "customer_question": "Ampang",
+      "source": "欣（客服：Amy Yuan）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_032",
+      "customer_question": "Elaine",
+      "source": "Siew Peng Low（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_033",
+      "customer_question": "Ms Yeo",
+      "source": "Penny（客服：Jestina Cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_034",
+      "customer_question": "Evening～Location 🏠👆🏻pls🤔",
+      "source": "9/4 Taat Pada Yang S（客服：Jestina Cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_035",
+      "customer_question": "Morning～what is your operation🕰️👆🏻🤔",
+      "source": "9/4 Taat Pada Yang S（客服：Jestina Cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_036",
+      "customer_question": "👆🏻your operation time pls🤔",
+      "source": "9/4 Taat Pada Yang S（客服：Jestina Cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 营业时间？"
+    },
+    {
+      "id": "q_037",
+      "customer_question": "Harga berapa ?",
+      "source": "Carson Services@卡森（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况：具体是哪个位置的问题？有多久了？不同情况方案和费用不一样。我们有免费CBCT检查+医生面诊建议。"
+        },
+        {
+          "text": "我们目前有优惠活动，可以享受免费口腔检查。先来拍片看看具体情况，医生会给您出方案和准确报价。"
+        },
+        {
+          "text": "我理解您关心价格的心情。建议先来免费检查，了解清楚自己的情况再做决定。检查和咨询都是免费的😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇲🇾 多少钱？"
+    },
+    {
+      "id": "q_038",
+      "customer_question": "Geraham ?",
+      "source": "Carson Services@卡森（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇲🇾 大牙？"
+    },
+    {
+      "id": "q_039",
+      "customer_question": "Lokasi ?",
+      "source": "Carson Services@卡森（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇲🇾 位置在哪？"
+    },
+    {
+      "id": "q_040",
+      "customer_question": "how much",
+      "source": "全口Chee Kok Hwa（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况：具体是哪个位置的问题？有多久了？不同情况方案和费用不一样。我们有免费CBCT检查+医生面诊建议。"
+        },
+        {
+          "text": "我们目前有优惠活动，可以享受免费口腔检查。先来拍片看看具体情况，医生会给您出方案和准确报价。"
+        },
+        {
+          "text": "我理解您关心价格的心情。建议先来免费检查，了解清楚自己的情况再做决定。检查和咨询都是免费的😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 多少钱？"
+    },
+    {
+      "id": "q_041",
+      "customer_question": "where is your location",
+      "source": "全口Chee Kok Hwa（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 位置在哪？"
+    },
+    {
+      "id": "q_042",
+      "customer_question": "no sat 11",
+      "source": "全口Chee Kok Hwa（客服：张玥）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_043",
+      "customer_question": "English",
+      "source": "Be happy always 😊😊😊（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_044",
+      "customer_question": "Implants teeth",
+      "source": "Be happy always 😊😊😊（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_045",
+      "customer_question": "4 months",
+      "source": "Be happy always 😊😊😊（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_046",
+      "customer_question": "Chee Kok Hwa 2/4/2026. 10am",
+      "source": "Shawn Yow（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_047",
+      "customer_question": "I was thinking to extract all my tooth to do this... How much will it cost me?",
+      "source": "Connie  已到院（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "建议先来拍个X光片看看智齿位置。如果横生或阻生可能需要拔除。我们有免费检查，拍片看情况给您建议。"
+        },
+        {
+          "text": "拔智齿费用看难度，大概RM300-1500不等。先来免费拍片检查，医生给您准确报价。"
+        },
+        {
+          "text": "先别担心费用问题。来做个免费检查，拍片看看情况，医生会给您讲清楚治疗方案和费用，您了解了再决定😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 我想拔掉所有牙做种植，多少钱？"
+    },
+    {
+      "id": "q_048",
+      "customer_question": "Most teeth is already shaking & missing a lot",
+      "source": "Connie  已到院（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 大部分牙都松了，缺了很多"
+    },
+    {
+      "id": "q_049",
+      "customer_question": "Few yrs ago",
+      "source": "Connie  已到院（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_050",
+      "customer_question": "Sungai buloh",
+      "source": "MD SOJIB SARKAR（客服：Kris teoh）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_051",
+      "customer_question": "Do you do free check-up *?*",
+      "source": "kellykheow（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "是的！我们现在前50名预约客户可以享受免费口腔检查+CBCT拍片+医生面诊。外面单独拍片都要RM400+，我们是全免费的。"
+        },
+        {
+          "text": "对的，我们有免费检查活动。包含CBCT拍片、医生面诊和方案设计，没有任何收费。您看什么时候方便过来？"
+        },
+        {
+          "text": "是的，免费检查包括CBCT全景拍片和医生一对一面诊。您先来了解情况，决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 有免费检查吗？"
+    },
+    {
+      "id": "q_052",
+      "customer_question": "2 Where are you based at *?*",
+      "source": "kellykheow（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 你们在哪里？"
+    },
+    {
+      "id": "q_053",
+      "customer_question": "Old Klang Road, KL",
+      "source": "kellykheow（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_054",
+      "customer_question": "Hi My wisdom tooth has been growing for about a year now. It hurts a lot. Sometimes it hurts and it swells up a lot. What should I do now?",
+      "source": "Ms Tham Choy Ling（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "听起来很难受，建议尽快来看看。先做免费检查拍片，看看牙齿位置和发炎情况。如果是智齿问题，可能需要拔除，过程很快的。"
+        },
+        {
+          "text": "牙龈肿痛可能是智齿发炎了。来做个免费检查，让医生看看具体情况。我们有微创拔牙，比想象中轻松很多。"
+        },
+        {
+          "text": "牙痛不能拖，越拖越严重。先来免费拍片检查，半小时之内就能搞清楚问题所在和解决方案😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 智齿长了一年很痛肿起来怎么办？"
+    },
+    {
+      "id": "q_055",
+      "customer_question": "Please provide the location of your clinic.",
+      "source": "Ms Tham Choy Ling（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_056",
+      "customer_question": "I have had this tooth problem for a long time and I want to remove this stain. How much will it cost?",
+      "source": "Ms Tham Choy Ling（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况：具体是哪个位置的问题？有多久了？不同情况方案和费用不一样。我们有免费CBCT检查+医生面诊建议。"
+        },
+        {
+          "text": "我们目前有优惠活动，可以享受免费口腔检查。先来拍片看看具体情况，医生会给您出方案和准确报价。"
+        },
+        {
+          "text": "我理解您关心价格的心情。建议先来免费检查，了解清楚自己的情况再做决定。检查和咨询都是免费的😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 牙的问题很久了，想去污渍多少钱？"
+    },
+    {
+      "id": "q_057",
+      "customer_question": "kelly kheow",
+      "source": "水约Gan Nee Golden Har（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_058",
+      "customer_question": "Slmt pg. Where the clinic bos?",
+      "source": "王总（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇲🇾 早安诊所在哪里老板？"
+    },
+    {
+      "id": "q_059",
+      "customer_question": "Do u have clinic in shah alam?",
+      "source": "王总（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 在莎阿南有诊所吗？"
+    },
+    {
+      "id": "q_060",
+      "customer_question": "I plan to go to your clinic for check up to install false teeth. Will ask the appointment some where next month. Tq",
+      "source": "王总（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 想去诊所检查装假牙"
+    },
+    {
+      "id": "q_061",
+      "customer_question": "CHEN MEIYAN",
+      "source": "HP Lim（客服：siow feng）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_062",
+      "customer_question": "Mr Hing",
+      "source": "EY 预约 15/3（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_063",
+      "customer_question": "Can arrange a consultation?",
+      "source": "Gilbert Tan（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "当然可以！请问您想预约什么时间？上午还是下午？我们工作日和周末都开门（10am-7pm）。我帮您安排。"
+        },
+        {
+          "text": "好的，我来帮您预约。请问您方便什么时间到访？我们提供免费检查，可以先过来了解情况。请给我您的姓名和电话。"
+        },
+        {
+          "text": "没问题！我帮您安排时间。需要留下您的姓名和联系方式，我好帮您预约登记😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 可以安排咨询吗？"
+    },
+    {
+      "id": "q_064",
+      "customer_question": "Monday 9 March",
+      "source": "Gilbert Tan（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 3月9日星期一"
+    },
+    {
+      "id": "q_065",
+      "customer_question": "Lim Hik Peng",
+      "source": "Gilbert Tan（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_066",
+      "customer_question": "How much is your dental implant including zirconia crown?",
+      "source": "ClementGBS（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 种植牙含全瓷冠多少钱？"
+    },
+    {
+      "id": "q_067",
+      "customer_question": "What brand is it?",
+      "source": "ClementGBS（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 是什么品牌的？"
+    },
+    {
+      "id": "q_068",
+      "customer_question": "How many years of experience does the dentist have in dental implants treatment?",
+      "source": "ClementGBS（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 医生做种植牙有多少年经验？"
+    },
+    {
+      "id": "q_069",
+      "customer_question": "3 - price for implant package and how long it how many visits it takes to complete 1 implant",
+      "source": "28/2 Mahmoud（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇲🇾 种植套餐价格多少？"
+    },
+    {
+      "id": "q_070",
+      "customer_question": "my left side no teeth, thinking to do 2 implant and bridging. my left side no teeth, thinking to do 2 implant and bridging.",
+      "source": "28/2 Mahmoud（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 左边没牙了，想做2颗种植加牙桥"
+    },
+    {
+      "id": "q_071",
+      "customer_question": "Many years,  I think more than 10 years.",
+      "source": "28/2 Mahmoud（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_072",
+      "customer_question": "English please?😁",
+      "source": "Abg Boya（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "Sure! I can assist in English. May I know your dental concern? We offer free check-up with CBCT scan. 😊"
+        },
+        {
+          "text": "Of course! Happy to help in English. What dental issue are you facing? We specialize in implants, extractions, and general dentistry. Free consultation available."
+        },
+        {
+          "text": "No problem, I'll continue in English. Let me know your dental concern and I'll be happy to help 😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 请说英文"
+    },
+    {
+      "id": "q_073",
+      "customer_question": "Can I know the cost for a single tooth implant?",
+      "source": "Abg Boya（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 单颗种植牙多少钱？"
+    },
+    {
+      "id": "q_074",
+      "customer_question": "1 tooth. 5 months ago",
+      "source": "Abg Boya（客服：李仪）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 1颗牙，5个月前"
+    },
+    {
+      "id": "q_075",
+      "customer_question": "How much is one teeth implant",
+      "source": "謝志安（客服：xiao feng）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 种一颗牙多少钱？"
+    },
+    {
+      "id": "q_076",
+      "customer_question": "And type of plant is used",
+      "source": "謝志安（客服：xiao feng）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_077",
+      "customer_question": "Thanka for the info",
+      "source": "謝志安（客服：xiao feng）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_078",
+      "customer_question": "nama saya akbar, umur 39 tahun, saya nak cabut gigi atas bawah semua,dn nak pasang mcm yg kamu iklan kn d fb tu",
+      "source": "Elizasoo（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_079",
+      "customer_question": "mcm ni,brapa bajet ya atas bawah",
+      "source": "Elizasoo（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_080",
+      "customer_question": "klau cabut gigi barapa harga",
+      "source": "Elizasoo（客服：任小琼）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先了解情况再报价：请问缺了几颗牙？在哪个位置？缺了多久了？不同位置和数量方案不一样，价格也会不同。我们目前有免费CBCT检查+医生面诊，可以帮您先看看骨头条件再出具体方案和报价。您方便过来看看吗？🤗"
+        },
+        {
+          "text": "我们现在活动价RM3,980一颗全包（种植体+基台+全瓷牙冠+手术+CBCT）。外面市场价RM6,000-8,000，我们便宜差不多一半。而且含终身免费复查，花一次钱管一辈子。"
+        },
+        {
+          "text": "价格确实是要考虑的重要因素。我建议您先过来做个免费检查，让医生看看您的口腔情况出个方案，您知道具体要做什么了再做决定。检查不收费也没压力，先了解清楚再说😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_081",
+      "customer_question": "Location please",
+      "source": "Nava（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 请给位置"
+    },
+    {
+      "id": "q_082",
+      "customer_question": "Sorry .boleh bahasa malay",
+      "source": "Nava（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇲🇾 可以说马来文吗？"
+    },
+    {
+      "id": "q_083",
+      "customer_question": "Cheras bt 10",
+      "source": "Nava（客服：jestina cheo）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_084",
+      "customer_question": "Cheah Chee Onn",
+      "source": "Table_40（客服：）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_085",
+      "customer_question": "Soo yock hong",
+      "source": "Table_41（客服：）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "先帮您了解一下情况。具体是什么牙齿问题呢？缺牙还是牙痛？有几颗？多久了？了解清楚后我给您分析最合适的方案。"
+        },
+        {
+          "text": "我们有免费CBCT检查+医生面诊，可以先来看看具体情况，了解清楚了再做决定。检查和咨询都是免费的。"
+        },
+        {
+          "text": "别担心，先来做个免费检查了解清楚。医生会帮您做全面评估，给您最适合的方案建议。决定做不做都没关系😊"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": ""
+    },
+    {
+      "id": "q_086",
+      "customer_question": "Where is your location, I want to make a visit",
+      "source": "Table_42（客服：）",
+      "status": "trained",
+      "answers": [
+        {
+          "text": "我们在Puchong PFCC，详细地址：NO.1-F 1st Floor Tower 4&5, @PFCC, Jalan Puteri 1/2, Bandar Puteri, 47100 Puchong。您住哪一区呢？我们有车接送。"
+        },
+        {
+          "text": "我们的地址是Puchong PFCC（靠近Pusat Bandar Puchong MRT站），停车很方便。关键是不管您住哪，我们有接送安排😊"
+        },
+        {
+          "text": "📍 Meya Dental @ PFCC Puchong\n到了一楼跟我说，我让同事下去接您"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "best_answer_index": 0,
+      "created_at": "2026-05-15T20:05:43.647629+08:00",
+      "notes": "🇬🇧 位置在哪？"
     }
   ],
-  "last_updated": "2026-05-14T10:05:00+08:00"
+  "last_updated": "2026-05-15T20:05:43.647629+08:00"
 }
