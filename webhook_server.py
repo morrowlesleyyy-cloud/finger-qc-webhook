@@ -809,9 +809,9 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .status-trained{background:#22c55e20;color:#22c55e;border:1px solid #22c55e40}
 .form-panel{width:380px;display:flex;flex-direction:column;gap:14px;position:fixed;top:80px;right:20px;max-height:calc(100vh - 100px);overflow-y:auto;z-index:100}
 .form-panel h3{font-size:15px;color:#e2e8f0;padding-bottom:8px;border-bottom:1px solid #334155}
-.form-panel .q-preview{font-size:12px;color:#94a3b8;background:#0f172a;padding:10px;border-radius:8px;line-height:1.5;max-height:80px;overflow-y:auto}
+.form-panel .q-preview{font-size:13px;color:#e2e8f0;background:#0f172a;padding:14px;border-radius:8px;line-height:1.6;max-height:200px;overflow-y:auto;border-left:3px solid #60a5fa;word-break:break-word}
 .form-panel label{font-size:13px;color:#94a3b8;font-weight:600;padding-top:4px}
-.form-panel textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:12px;font-size:14px;font-family:-apple-system,system-ui,sans-serif;resize:vertical;min-height:80px;outline:none;transition:border-color .2s;line-height:1.5}
+.form-panel textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:12px;font-size:14px;font-family:-apple-system,system-ui,sans-serif;resize:vertical;min-height:70px;outline:none;transition:border-color .2s;line-height:1.5}
 .form-panel textarea:focus{border-color:#60a5fa}
 .form-panel .btn{background:#2563eb;border:none;border-radius:10px;color:#fff;padding:16px 24px;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;width:100%;letter-spacing:0.5px}
 .form-panel .btn:hover{background:#1d4ed8}
