@@ -608,7 +608,23 @@ fetch('/sessions').then(function(r){return r.json()}).then(function(sdata){
     renderBlock(nm);
   }
   av.textContent=hasData?'-':'等待消息...';
-  if(!hasData)feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:50px 20px;line-height:2">暂无历史记录<br>等待Webhook新消息流入...</div>';
+  if(!hasData){
+    // Fallback: show training questions as demo
+    fetch('/api/training').then(function(r2){return r2.json()}).then(function(td){
+      var tps=(td.training_pairs||[]).slice(-10);
+      tps.forEach(function(tp){
+        c++; mc.textContent=c;
+        var nm='培训: '+tp.id;
+        cs.add(nm); cc.textContent=cs.size;
+        if(!convs[nm])convs[nm]=[];
+        convs[nm].push({tp:'c',txt:tp.customer_question,tm:'',cn:'',issues:[]});
+        var ans=tp.answers||[];
+        if(ans.length&&ans[0].text)convs[nm].push({tp:'e',txt:ans[0].text.slice(0,100),tm:'',emp:tp.source||'员工',sc:75,cn:'',issues:[]});
+        renderBlock(nm);
+      });
+      if(!tps.length)feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:50px 20px;line-height:2">暂无数据<br>等待Webhook新消息流入...</div>';
+    });
+  }
 });
 
 // SSE realtime
