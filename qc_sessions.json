@@ -1,0 +1,398 @@
+{
+  "sessions": {
+    "+60127881169": {
+      "phone": "+60127881169",
+      "messages": [
+        {
+          "type": "emp",
+          "content": "你的牙齿是什么问题呢？可以告诉我一下，我才能更好的给你提供咨询服务哦 😀What is wrong with your teeth? Could you let me know, so I can give you better consultation service.",
+          "time": "2026-05-11T14:11:05.077000+08:00"
+        },
+        {
+          "type": "customer",
+          "content": "我拔掉一颗大牙，补回需要多少钱？",
+          "time": "2026-05-11T14:12:42.893000+08:00"
+        },
+        {
+          "type": "emp",
+          "content": "已经拔除了吗？主要还是你想做那种方式的修复",
+          "time": "2026-05-11T14:14:00.666000+08:00"
+        },
+        {
+          "type": "emp",
+          "content": "我们这边现在在做活动，种植牙原价5980，现在活动价值需要3980 ",
+          "time": "2026-05-11T14:15:47.897275"
+        },
+        {
+          "type": "customer",
+          "content": "你们的公司柔佛居銮有吗？在哪里？",
+          "time": "2026-05-11T14:15:48.423691"
+        },
+        {
+          "type": "emp",
+          "content": "柔佛暂时没有，我们在puchong PFCC ",
+          "time": "2026-05-11T14:16:22.665388"
+        },
+        {
+          "type": "emp",
+          "content": "柔佛也有  很多患者过来我们这边做的，主要是我们的医生经验丰富，十多年的种植经验，大马这边种植牙不是很普及，经验丰富的医生比较少。种植牙医生技术是非常关键的。",
+          "time": "2026-05-11T14:18:08.866390"
+        },
+        {
+          "type": "emp",
+          "content": "一颗可以做牙冠连桥修复，也可以做种植牙修复，最好的修复方式是种植牙修复，种植牙也是目前缺牙最好的修复方式",
+          "time": "2026-05-11T14:20:22.221521"
+        }
+      ],
+      "score_history": [
+        {
+          "score": 65,
+          "time": "2026-05-11T14:15:47.897275"
+        },
+        {
+          "score": 60,
+          "time": "2026-05-11T14:16:22.665388"
+        },
+        {
+          "score": 65,
+          "time": "2026-05-11T14:18:08.866390"
+        },
+        {
+          "score": 65,
+          "time": "2026-05-11T14:20:22.221521"
+        }
+      ],
+      "contact_name": "daniel1688",
+      "source": "direct",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:11:05.077000+08:00",
+      "last_activity": "2026-05-11T14:20:22.221521",
+      "employee": ""
+    },
+    "+60192234327": {
+      "phone": "+60192234327",
+      "messages": [
+        {
+          "type": "emp",
+          "content": "下午好老板🥰我是MEYA dental的咨询师mia😉很高兴为您服务",
+          "time": "2026-05-11T14:11:13.831000+08:00"
+        },
+        {
+          "type": "emp",
+          "content": "种植牙是现在最顶尖的修复方式~无论是外观还是咀嚼度都是和自己真牙无异的🤗请问您是有缺失几颗牙齿，缺失在哪个位置呢",
+          "time": "2026-05-11T14:13:00.301000+08:00"
+        },
+        {
+          "type": "emp",
+          "content": "我根据您的基本情况给您推荐大概的修复方式~",
+          "time": "2026-05-11T14:13:11.886000+08:00"
+        },
+        {
+          "type": "customer",
+          "content": "右边，上边中间",
+          "time": "2026-05-11T14:16:50.913203"
+        },
+        {
+          "type": "emp",
+          "content": "是单颗缺失吗",
+          "time": "2026-05-11T14:19:03.998969"
+        },
+        {
+          "type": "emp",
+          "content": "理解大牙缺了真的很不方便，吃东西都不敢正常咬，长期只用一边嚼也挺累的😌种植牙就刚好很适合大牙修复，不用磨邻牙，独立稳固，咬东西力度跟自己真牙一样，日常吃饭完全不用将就，维护好还能用30年以上，戴着也没有异物感，舒服又省心~",
+          "time": "2026-05-11T14:19:54.932920"
+        },
+        {
+          "type": "emp",
+          "content": "🤗种植牙是独立扎根在牙槽骨里，不用磨旁边任何好牙，自己一颗独立稳固，咬东西力度跟原本真牙一样",
+          "time": "2026-05-11T14:23:01.130000"
+        },
+        {
+          "type": "emp",
+          "content": "老板您住在哪里呢、",
+          "time": "2026-05-11T14:23:27.923259"
+        },
+        {
+          "type": "customer",
+          "content": "多少钱，跟以前的钟牙，有什么不一样",
+          "time": "2026-05-11T14:26:39.952508"
+        },
+        {
+          "type": "customer",
+          "content": "在那里",
+          "time": "2026-05-11T14:26:57.257855"
+        },
+        {
+          "type": "emp",
+          "content": "我们现在有做promotion，一颗RM3980，包完种植体、基台和牙冠。外面市场价普遍RM6000到8000嘛，我们差不多便宜一半🤗因为我们这边是专门做种植牙的诊所，拿货量大，成本可以压低，但品质你放心，都是国际一线品牌的种植体",
+          "time": "2026-05-11T14:27:34.757337"
+        },
+        {
+          "type": "customer",
+          "content": "Ipoh",
+          "time": "2026-05-11T14:30:22.244697"
+        },
+        {
+          "type": "emp",
+          "content": "我们离您那边还有点距离，但其实很多槟城、怡保、JB 远道而来的顾客，都特意过来我们这边做种植牙☺️\n我们现在活动价格很划算、性价比超高；二来我们是种植牙专科诊所，临床经验特别丰富~",
+          "time": "2026-05-11T14:40:07.846315"
+        },
+        {
+          "type": "emp",
+          "content": "您最近有打算来KL这边游玩或者办事吗🤗",
+          "time": "2026-05-11T14:40:32.393269"
+        }
+      ],
+      "score_history": [
+        {
+          "score": 65,
+          "time": "2026-05-11T14:19:03.998969"
+        },
+        {
+          "score": 70,
+          "time": "2026-05-11T14:19:54.932920"
+        },
+        {
+          "score": 60,
+          "time": "2026-05-11T14:23:01.130000"
+        },
+        {
+          "score": 60,
+          "time": "2026-05-11T14:23:27.923259"
+        },
+        {
+          "score": 65,
+          "time": "2026-05-11T14:27:34.757337"
+        },
+        {
+          "score": 65,
+          "time": "2026-05-11T14:40:07.846315"
+        },
+        {
+          "score": 60,
+          "time": "2026-05-11T14:40:32.393269"
+        }
+      ],
+      "contact_name": "Boon siew",
+      "source": "",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:11:13.831000+08:00",
+      "last_activity": "2026-05-11T14:40:32.393269",
+      "employee": "Mia"
+    },
+    "+60182764773": {
+      "phone": "+60182764773",
+      "messages": [
+        {
+          "type": "customer",
+          "content": "大概多少钱呢？",
+          "time": "2026-05-11T14:25:49.879757"
+        },
+        {
+          "type": "emp",
+          "content": "我们现在做活动，原价5980的韩国主流种植体，现在优惠价只要3980全包，包含种植体、基台和全瓷牙冠，而且有官方质保，用30-40年都没问题",
+          "time": "2026-05-11T14:29:30.742743"
+        },
+        {
+          "type": "emp",
+          "content": "这个品牌的种植牙市场价在6K-8K之间，我们诊所和厂家做活动，所以这次优惠活动力度很大",
+          "time": "2026-05-11T14:29:42.018060"
+        },
+        {
+          "type": "emp",
+          "content": "老板你住在哪个区的呢",
+          "time": "2026-05-11T14:35:24.259697"
+        }
+      ],
+      "score_history": [
+        {
+          "score": 65,
+          "time": "2026-05-11T14:29:30.742743"
+        },
+        {
+          "score": 65,
+          "time": "2026-05-11T14:29:42.018060"
+        },
+        {
+          "score": 60,
+          "time": "2026-05-11T14:35:24.259697"
+        }
+      ],
+      "contact_name": "L",
+      "source": "",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:25:49.879757",
+      "last_activity": "2026-05-11T14:35:24.259697",
+      "employee": ""
+    },
+    "+601175625988": {
+      "phone": "+601175625988",
+      "messages": [
+        {
+          "type": "emp",
+          "content": "hello kakak ,boleh saye tau you missing brp gigi tak ya?",
+          "time": "2026-05-11T14:26:45.181532"
+        }
+      ],
+      "score_history": [
+        {
+          "score": 60,
+          "time": "2026-05-11T14:26:45.181532"
+        }
+      ],
+      "contact_name": "5988",
+      "source": "",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:26:45.181532",
+      "last_activity": "2026-05-11T14:26:45.181532",
+      "employee": ""
+    },
+    "+60164604978": {
+      "phone": "+60164604978",
+      "messages": [
+        {
+          "type": "customer",
+          "content": "Bpa hrga ggi ats bwh bos",
+          "time": "2026-05-11T14:39:45.870506"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "",
+      "source": "",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:39:45.870506",
+      "last_activity": "2026-05-11T14:39:45.870506",
+      "employee": ""
+    },
+    "+60168014362": {
+      "phone": "+60168014362",
+      "messages": [
+        {
+          "type": "emp",
+          "content": "没关系的， 后面你有什么问题可以联系我给你打电话的那个WhatsApp，无论你什么时候来看诊 我都会给你免除看诊检查的费用",
+          "time": "2026-05-11T14:10:34.832000+08:00"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "",
+      "source": "",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:10:34.832000+08:00",
+      "last_activity": "2026-05-11T14:10:34.832000+08:00",
+      "employee": ""
+    },
+    "+60196133521": {
+      "phone": "+60196133521",
+      "messages": [
+        {
+          "type": "emp",
+          "content": "不客气，明天见🥰",
+          "time": "2026-05-11T14:10:22.857000+08:00"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "",
+      "source": "",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:10:22.857000+08:00",
+      "last_activity": "2026-05-11T14:10:22.857000+08:00",
+      "employee": "Mia"
+    },
+    "+60137134221": {
+      "phone": "+60137134221",
+      "messages": [
+        {
+          "type": "customer",
+          "content": "Rm ?",
+          "time": "2026-05-11T14:11:32.743000+08:00"
+        },
+        {
+          "type": "emp",
+          "content": "boss. I'm John, consultation assistant from MEYA Dental.Dental implant is a dental technology with over 60 years of history overseas. It fuses together with your jaw bone, is very durable, and can last for 30 to 40 years.We are a clinic that specializes purely in dental implants. It’s my pleasure to serve you. ☺️",
+          "time": "2026-05-11T14:12:23.499000+08:00"
+        },
+        {
+          "type": "emp",
+          "content": "Could you tell me about your dental condition? I hope I can help you.",
+          "time": "2026-05-11T14:13:11.853000+08:00"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "Miyo diman",
+      "source": "fb_ad",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:11:32.743000+08:00",
+      "last_activity": "2026-05-11T14:13:11.853000+08:00",
+      "employee": "John"
+    },
+    "+601135237321": {
+      "phone": "+601135237321",
+      "messages": [
+        {
+          "type": "customer",
+          "content": "[unsupported]",
+          "time": "2026-05-11T14:35:20.202000+08:00"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "azizSurawi",
+      "source": "direct",
+      "stage": "unknown",
+      "start_time": "2026-05-11T14:35:20.202000+08:00",
+      "last_activity": "2026-05-11T14:35:20.202000+08:00",
+      "employee": ""
+    },
+    "+60111111111": {
+      "phone": "+60111111111",
+      "messages": [
+        {
+          "type": "customer",
+          "content": "请问种牙能用多久？",
+          "time": "2026-05-14T12:51:26.438771+08:00"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "本地测试",
+      "source": "direct",
+      "stage": "unknown",
+      "start_time": "2026-05-14T12:51:26.438739+08:00",
+      "last_activity": "2026-05-14T12:51:26.438766+08:00",
+      "employee": ""
+    },
+    "+60123456789": {
+      "phone": "+60123456789",
+      "messages": [
+        {
+          "type": "customer",
+          "content": "种牙要多久？当天能种好吗？",
+          "time": "2026-05-14T12:52:50.925077+08:00"
+        }
+      ],
+      "score_history": [],
+      "contact_name": "王先生",
+      "source": "direct",
+      "stage": "unknown",
+      "start_time": "2026-05-14T12:52:50.924617+08:00",
+      "last_activity": "2026-05-14T12:52:50.925068+08:00",
+      "employee": ""
+    }
+  },
+  "total_messages": 36,
+  "all_scores": [
+    65,
+    60,
+    65,
+    65,
+    70,
+    65,
+    60,
+    60,
+    60,
+    65,
+    65,
+    65,
+    60,
+    65,
+    60
+  ]
+}
