@@ -873,7 +873,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .form-panel label{font-size:13px;color:#94a3b8;font-weight:600;padding-top:4px}
 .form-panel textarea{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:12px;font-size:14px;font-family:-apple-system,system-ui,sans-serif;resize:vertical;min-height:70px;outline:none;transition:border-color .2s;line-height:1.5}
 .form-panel textarea:focus{border-color:#60a5fa}
-.form-panel .btn{background:#2563eb;border:none;border-radius:10px;color:#fff;padding:16px 24px;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;width:100%;letter-spacing:0.5px}
+.form-panel .btn{background:#2563eb;border:none;border-radius:10px;color:#fff;padding:16px 24px;font-size:16px;font-weight:700;cursor:pointer;transition:background .2s;width:100%;letter-spacing:0.5px}.form-panel .btn-del{background:#7f1d1d;border:none;border-radius:10px;color:#fca5a5;padding:16px 24px;font-size:16px;font-weight:600;cursor:pointer;transition:background .2s;width:100%}.form-panel .btn-del:hover{background:#991b1b}.del-btn{cursor:pointer;font-size:14px;padding:2px 6px;border-radius:4px;opacity:0.6}.del-btn:hover{opacity:1;background:#7f1d1d40}
 .form-panel .btn:hover{background:#1d4ed8}
 .form-panel .btn:disabled{background:#334155;color:#64748b;cursor:not-allowed}
 .form-panel .msg{font-size:11px;padding:8px 12px;border-radius:6px;display:none}
@@ -919,7 +919,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 <textarea id=a4 placeholder="Finger推荐话术..."></textarea>
 <label>话术 ⑤ 📝 待补充</label>
 <textarea id=a5 placeholder="培训师补充话术..."></textarea>
-<button class=btn id=btnSubmit onclick=submitTraining()>💾 提交培训</button>
+<div style=display:flex;gap:8px><button class=btn id=btnSubmit onclick=submitTraining() style=flex:1>💾 提交培训</button><button class=btn-del id=btnDelete onclick=deleteTraining() style=flex:0.4>🗑️ 删除</button></div>
 <div class=msg id=formMsg></div>
 </div>
 </div>
@@ -954,7 +954,7 @@ function render(data){
   var sorted=[...pairs].reverse();
   board.innerHTML=sorted.map(function(p){
     var isTrained=p.status==='trained',ans=p.answers||[],best=p.best_answer_index,active=selectedId===p.id?' active':'';
-    return '<div class=card'+active+' onclick=selectQuestion("'+esc(p.id)+'")><div class=card-hd><div><span class=q-id>#'+esc(p.id)+'</span><span class="status-badge '+(isTrained?'status-trained':'status-pending')+'">'+(isTrained?'✅ 已培训':'⏳ 待培训')+'</span></div><span class=q-source>📞 '+esc(p.source||'未知')+'</span></div><div class=q-text>'+esc(p.customer_question)+'</div>'+(ans.length?'<div class=answers>'+ans.map(function(a,i){return '<div class="answer'+(best===i?' best':'')+'"><div class=answer-label>'+(best===i?'⭐ ':'')+'话术 '+(i+1)+(best===i?' (最优)':'')+'</div>'+esc(a.text)+'</div>'}).join('')+'</div>':'<div style=color:#64748b;font-size:13px;font-style:italic>点击此卡片开始培训...</div>')+'</div>';
+    return '<div class=card'+active+' onclick=selectQuestion("'+esc(p.id)+'")><div class=card-hd><div><span class=q-id>#'+esc(p.id)+'</span><span class="status-badge '+(isTrained?'status-trained':'status-pending')+'">'+(isTrained?'✅ 已培训':'⏳ 待培训')+'</span></div><div style=display:flex;align-items:center;gap:8px><span class=q-source>'+esc(p.source||'未知')+'</span><span class=del-btn onclick="event.stopPropagation();deleteQuestion(\''+esc(p.id)+'\')" title="删除此问题">🗑️</span></div></div><div class=q-text>'+esc(p.customer_question)+'</div>'+(ans.length?'<div class=answers>'+ans.map(function(a,i){return '<div class="answer'+(best===i?' best':'')+'"><div class=answer-label>'+(best===i?'⭐ ':'')+'话术 '+(i+1)+(best===i?' (最优)':'')+'</div>'+esc(a.text)+'</div>'}).join('')+'</div>':'<div style=color:#64748b;font-size:13px;font-style:italic>点击此卡片开始培训...</div>')+'</div>';
   }).join('');
   if(selectedId)highlightQuestion(selectedId);
 }
@@ -995,6 +995,8 @@ function highlightQuestion(id){
   var target=document.querySelector('[onclick*="'+id+'"]');
   if(target)target.classList.add('active');
 }
+async function deleteQuestion(id){if(!confirm('确定删除此问题？'))return;try{var r=await fetch('/api/training/delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:id})});if(!r.ok)throw Error('删除失败');loadData();if(selectedId===id){selectedId=null;document.getElementById('answerFields').style.display='none';document.getElementById('qPreview').style.display='none'}}catch(e){alert('删除失败: '+e.message)}}
+
 async function submitTraining(){
   if(!selectedId)return;
   var a1=document.getElementById('a1').value.trim();
@@ -1083,6 +1085,22 @@ def training_train():
     found["status"] = "trained"
     save_training_data(data)
     return jsonify({"ok": True})
+
+
+@app.route("/api/training/delete", methods=["POST"])
+def training_delete():
+    d = request.get_json(silent=True) or {}
+    qid = d.get("id", "")
+    if not qid:
+        return jsonify({"error": "id required"}), 400
+    data = load_training_data()
+    before = len(data["training_pairs"])
+    data["training_pairs"] = [p for p in data["training_pairs"] if p["id"] != qid]
+    after = len(data["training_pairs"])
+    if before == after:
+        return jsonify({"error": "not found"}), 404
+    save_training_data(data)
+    return jsonify({"ok": True, "deleted": qid})
 
 
 if __name__ == "__main__":
