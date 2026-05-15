@@ -401,10 +401,10 @@ def handle_inbound(msg):
                     break
             if not dup:
                 nid = f"q_{len(td['training_pairs']) + 1:03d}"
-                scripts = generate_training_scripts(c.strip())
-                while len(scripts) < 5:
-                    scripts.append("")
-                answers = [{"text": s} for s in scripts]
+                my_suggestions = generate_training_scripts(c.strip())
+                while len(my_suggestions) < 3:
+                    my_suggestions.append("")
+                answers = [{"text": ""}, {"text": my_suggestions[0]}, {"text": my_suggestions[1]}, {"text": my_suggestions[2]}, {"text": ""}]
                 td["training_pairs"].append({
                     "id": nid, "customer_question": c.strip(),
                     "source": f"客户 {tag}", "status": "pending",
@@ -841,7 +841,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 <div class=content>
 <div class=board-col>
 <div class=board id=board>
-<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3><p>遇到客户问题时，Finger 会记录下来<br>你可以提供 3 条回答话术来完成培训</p></div>
+<div class=empty-state><div class=icon>📝</div><h3>暂无培训记录</h3><p>遇到客户问题时，Finger 会记录下来<br>员工原话 + Finger建议(3条) + 待补充 = 共5条话术</p></div>
 </div>
 </div>
 <div class=form-panel id=formPanel>
@@ -849,16 +849,16 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 <div style=font-size:11px;color:#64748b>点击左侧待培训问题开始编辑</div>
 <div class=q-preview id=qPreview style=display:none></div>
 <div id=answerFields style=display:none>
-<label>话术 1 🖐️</label>
-<textarea id=a1 placeholder="第一条话术..."></textarea>
-<label>话术 2 🖐️</label>
-<textarea id=a2 placeholder="第二条话术..."></textarea>
-<label>话术 3 🖐️</label>
-<textarea id=a3 placeholder="第三条话术..."></textarea>
-<label>话术 4 📝</label>
-<textarea id=a4 placeholder="第四条话术（待补充）"></textarea>
-<label>话术 5 📝</label>
-<textarea id=a5 placeholder="第五条话术（待补充）"></textarea>
+<label>话术 ① 👤 员工原话</label>
+<textarea id=a1 placeholder="员工的真实回复..."></textarea>
+<label>话术 ② 🖐️ Finger建议</label>
+<textarea id=a2 placeholder="Finger推荐话术..."></textarea>
+<label>话术 ③ 🖐️ Finger建议</label>
+<textarea id=a3 placeholder="Finger推荐话术..."></textarea>
+<label>话术 ④ 🖐️ Finger建议</label>
+<textarea id=a4 placeholder="Finger推荐话术..."></textarea>
+<label>话术 ⑤ 📝 待补充</label>
+<textarea id=a5 placeholder="培训师补充话术..."></textarea>
 <button class=btn id=btnSubmit onclick=submitTraining()>💾 提交培训</button>
 <div class=msg id=formMsg></div>
 </div>
