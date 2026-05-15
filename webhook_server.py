@@ -784,9 +784,10 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .stat-card .num{font-size:26px;font-weight:700;color:#60a5fa}
 .stat-card .label{font-size:11px;color:#94a3b8;margin-top:2px}
 .last-upd{font-size:11px;color:#64748b;margin-bottom:16px}
-.content{display:flex;gap:20px;flex:1;overflow:hidden;align-items:flex-start}
-.board-col{flex:1;overflow-y:auto;padding-right:8px;height:100%}
+.content{display:flex;gap:20px;flex:1;overflow:hidden;height:calc(100vh - 100px)}
+.board-col{flex:1;overflow-y:auto;padding-right:400px;height:100%}
 .board{display:flex;flex-direction:column;gap:14px;padding-bottom:60px}
+.board-col::-webkit-scrollbar{width:10px}
 .card{background:#1e293b;border-radius:12px;padding:20px;border:1px solid #334155;transition:border-color .2s;cursor:pointer}
 .card:hover{border-color:#475569}
 .card.active{border-color:#60a5fa}
@@ -806,7 +807,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .status-badge{display:inline-block;font-size:11px;padding:2px 10px;border-radius:10px;font-weight:500;margin-left:8px}
 .status-pending{background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40}
 .status-trained{background:#22c55e20;color:#22c55e;border:1px solid #22c55e40}
-.form-panel{width:380px;display:flex;flex-direction:column;gap:14px;position:sticky;top:20px;align-self:flex-start;max-height:calc(100vh - 100px);overflow-y:auto;flex-shrink:0}
+.form-panel{width:380px;display:flex;flex-direction:column;gap:14px;position:fixed;top:80px;right:20px;max-height:calc(100vh - 100px);overflow-y:auto;z-index:100}
 .form-panel h3{font-size:15px;color:#e2e8f0;padding-bottom:8px;border-bottom:1px solid #334155}
 .form-panel .q-preview{font-size:12px;color:#94a3b8;background:#0f172a;padding:10px;border-radius:8px;line-height:1.5;max-height:80px;overflow-y:auto}
 .form-panel label{font-size:13px;color:#94a3b8;font-weight:600;padding-top:4px}
