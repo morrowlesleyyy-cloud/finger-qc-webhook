@@ -539,7 +539,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .sug-card .num{font-size:10px;color:#64748b;margin-bottom:4px}
 .sug-card .txt{font-size:12px;line-height:1.6;color:#e2e8f0}
 .sug-empty{text-align:center;color:#475569;font-size:12px;padding:30px 14px;line-height:2}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#475569;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#60a5fa}
 </style></head><body>
 <div class=header><h1>Finger 实时看板</h1>
 <div class=stats><span>消息 <b id=msgC>0</b></span><span>客户 <b id=custC>0</b></span><span>均分 <b id=avgS>-</b></span></div>
@@ -628,7 +628,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .conv-msg .tm{font-size:10px;color:#64748b;margin-top:2px}
 .conv-msg .score{font-size:10px;color:#facc15;margin-top:1px}
 @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#475569;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#60a5fa}
 .no-data{text-align:center;color:#475569;font-size:13px;padding:60px 20px;line-height:2}
 </style></head><body>
 <div class=header><h1>📋 沟通记录</h1><nav>
@@ -818,7 +818,7 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .form-panel .msg{font-size:11px;padding:8px 12px;border-radius:6px;display:none}
 .msg-ok{background:#166534;color:#4ade80;border:1px solid #22c55e40}
 .msg-err{background:#7f1d1d;color:#fca5a5;border:1px solid #ef444440}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#334155;border-radius:2px}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#475569;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#60a5fa}
 @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 .card{animation:fadeIn .3s}
 </style></head><body>
