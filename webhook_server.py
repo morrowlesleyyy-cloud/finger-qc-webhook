@@ -564,7 +564,7 @@ function renderBlock(name){
     feed.appendChild(el);
   }
   var show=msgs.slice(-SHOW);
-  var h='<div style="font-size:11px;color:#38bdf8;font-weight:600;padding-bottom:6px;border-bottom:1px solid #334155;margin-bottom:6px">💬 '+esc(name)+'</div>';
+  var h='<div style="font-size:11px;color:#38bdf8;font-weight:600;padding-bottom:6px;border-bottom:1px solid #334155;margin-bottom:6px">' + esc(name) + '</div>';
   show.forEach(function(m){
     var side=m.tp=='c'?'in':'out';
     var who=m.tp=='c'?esc(name):esc(m.emp||'员工');
@@ -574,10 +574,10 @@ function renderBlock(name){
       ext+='<span class="score '+cl+'">'+m.sc+'/100</span>';
     }
     if(m.tp=='c'&&m.cn){
-      ext+='<div style="color:#94a3b8;font-size:11px;margin-top:2px;border-top:1px solid #334155;padding-top:2px">🌐 '+esc(m.cn)+'</div>';
+      ext+='<div style="color:#94a3b8;font-size:11px;margin-top:2px;border-top:1px solid #334155;padding-top:2px">' + m.cn + '</div>';
     }
     if(m.issues&&m.issues.length){
-      ext+='<div class=issues>'+m.issues.map(function(i){return '⚠'+i.label}).join(' · ')+'</div>';
+      ext+='<div class=issues>'+m.issues.map(function(i){return '!'+i.label}).join(' . ')+'</div>';
     }
     h+='<div class="msg '+side+'"><div class=meta>'+(m.tm||'')+' <b>'+who+'</b></div><div class=text>'+esc(m.txt)+'</div>'+ext+'</div>';
   });
@@ -585,12 +585,35 @@ function renderBlock(name){
   feed.scrollTop=feed.scrollHeight;
 }
 
+// Load existing data first
+fetch('/sessions').then(function(r){return r.json()}).then(function(data){
+  for(var phone in data){
+    var s=data[phone];
+    var nm=s.contact_name||s.name||phone.slice(-4);
+    lastCust=nm;
+    cs.add(nm); cc.textContent=cs.size;
+    if(!convs[nm])convs[nm]=[];
+    var msgs=s.messages||[];
+    msgs.forEach(function(m){
+      if(m.type=='customer'){
+        convs[nm].push({tp:'c',txt:m.content,tm:m.time?m.time.slice(11,16):'',cn:'',issues:[]});
+        c++; mc.textContent=c;
+      }else if(m.type=='emp'){
+        convs[nm].push({tp:'e',txt:m.content,tm:m.time?m.time.slice(11,16):'',emp:s.employee||'员工',sc:75,cn:'',issues:[]});
+        c++; mc.textContent=c;
+      }
+    });
+    renderBlock(nm);
+  }
+  av.textContent='-';
+});
+
+// SSE realtime
 const es=new EventSource('/sse-stream');
 es.onmessage=function(e){
   const d=JSON.parse(e.data);
   if(d.type=='ready')return;
   c++; mc.textContent=c;
-  
   if(d.type=='customer'){
     var nm=d.name||d.phone||'客户';
     lastCust=nm;
@@ -599,10 +622,9 @@ es.onmessage=function(e){
     convs[nm].push({tp:'c',txt:d.content,tm:d.time||'',cn:d.cn||'',issues:[]});
     if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
     renderBlock(nm);
-    
     if(d.suggestions&&d.suggestions.length){
       sf.innerHTML='';
-      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>💡 建议'+(i+1)+'</div><div class=txt>'+esc(s).replace(/\n/g,'<br>')+'</div>';sf.appendChild(card)});
+      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + '</div><div class=txt>'+esc(s).replace(/\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
   }else if(d.type=='employee'){
@@ -615,7 +637,7 @@ es.onmessage=function(e){
   }else if(d.type=='alert'){
     var div=document.createElement('div');
     div.style.cssText='background:#3b0a0a;align-self:center;border:2px solid #ef4444;text-align:center;padding:8px;margin:8px 0';
-    div.innerHTML='<b style=color:#fca5a5>🚨 告警</b><div class=text>'+esc(d.content)+'</div><div style=color:#fca5a5;font-size:11px>'+(d.time||'')+' '+d.score+'/100</div>';
+    div.innerHTML='<b style=color:#fca5a5>!' + esc(d.content) + '</b></div>';
     feed.appendChild(div); feed.scrollTop=feed.scrollHeight;
   }
 };
