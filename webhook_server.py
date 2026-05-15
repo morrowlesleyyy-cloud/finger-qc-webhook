@@ -550,33 +550,71 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 </div>
 <script>
 const feed=document.getElementById('feed'), sf=document.getElementById('sugFeed'), mc=document.getElementById('msgC'), cc=document.getElementById('custC'), av=document.getElementById('avgS');
-let c=0, cs=new Set();
+let c=0, cs=new Set(), lastCust='';
+const convs={};
+const SHOW=5;
+
+function renderBlock(name){
+  var msgs=convs[name];
+  if(!msgs||!msgs.length)return;
+  var el=document.getElementById('b-'+esc(name));
+  if(!el){
+    el=document.createElement('div');el.id='b-'+esc(name);
+    el.style.cssText='margin-bottom:12px;background:#1e293b;border-radius:10px;padding:10px;border:1px solid #334155';
+    feed.appendChild(el);
+  }
+  var show=msgs.slice(-SHOW);
+  var h='<div style="font-size:11px;color:#38bdf8;font-weight:600;padding-bottom:6px;border-bottom:1px solid #334155;margin-bottom:6px">💬 '+esc(name)+'</div>';
+  show.forEach(function(m){
+    var side=m.tp=='c'?'in':'out';
+    var who=m.tp=='c'?esc(name):esc(m.emp||'员工');
+    var ext='';
+    if(m.tp=='e'&&m.sc!=null){
+      var cl=m.sc>=80?'s-good':(m.sc>=60?'s-ok':'s-bad');
+      ext+='<span class="score '+cl+'">'+m.sc+'/100</span>';
+    }
+    if(m.tp=='c'&&m.cn){
+      ext+='<div style="color:#94a3b8;font-size:11px;margin-top:2px;border-top:1px solid #334155;padding-top:2px">🌐 '+esc(m.cn)+'</div>';
+    }
+    if(m.issues&&m.issues.length){
+      ext+='<div class=issues>'+m.issues.map(function(i){return '⚠'+i.label}).join(' · ')+'</div>';
+    }
+    h+='<div class="msg '+side+'"><div class=meta>'+(m.tm||'')+' <b>'+who+'</b></div><div class=text>'+esc(m.txt)+'</div>'+ext+'</div>';
+  });
+  el.innerHTML=h;
+  feed.scrollTop=feed.scrollHeight;
+}
+
 const es=new EventSource('/sse-stream');
 es.onmessage=function(e){
   const d=JSON.parse(e.data);
   if(d.type=='ready')return;
   c++; mc.textContent=c;
-  const div=document.createElement('div');
+  
   if(d.type=='customer'){
-    div.className='msg in';
-    cs.add(d.name||d.phone); cc.textContent=cs.size;
-    let h='<div class=meta>'+(d.time||'')+' <b>'+(d.name||'客户')+'</b>'+(d.source?' '+d.source:'')+'</div><div class=text>'+esc(d.content)+'</div>';
-    if(d.cn)h+='<div style="color:#94a3b8;font-size:11px;margin-top:3px;border-top:1px solid #334155;padding-top:3px">🌐 '+esc(d.cn)+'</div>';
-    div.innerHTML=h; feed.appendChild(div); feed.scrollTop=feed.scrollHeight;
+    var nm=d.name||d.phone||'客户';
+    lastCust=nm;
+    cs.add(nm); cc.textContent=cs.size;
+    if(!convs[nm])convs[nm]=[];
+    convs[nm].push({tp:'c',txt:d.content,tm:d.time||'',cn:d.cn||'',issues:[]});
+    if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
+    renderBlock(nm);
+    
     if(d.suggestions&&d.suggestions.length){
-    // 保留历史建议，追加新建议
-      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>💡 建议'+(i+1)+'</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
+      sf.innerHTML='';
+      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>💡 建议'+(i+1)+'</div><div class=txt>'+esc(s).replace(/\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
   }else if(d.type=='employee'){
-    div.className='msg out';
-    var sc=d.score||0,cl=sc>=80?'s-good':(sc>=60?'s-ok':'s-bad');av.textContent=sc+'%';
-    var is=d.issues&&d.issues.length?'<div class=issues>'+d.issues.map(function(i){return '⚠'+i.label}).join(' · ')+'</div>':'';
-    var eh='<div class=meta>'+(d.time||'')+' <b>'+(d.employee||'员工')+'</b></div><div class=text>'+esc(d.content)+'</div><span class="score '+cl+'">'+sc+'/100</span>'+is;
-    if(d.cn)eh+='<div style="color:#94a3b8;font-size:11px;margin-top:3px;border-top:1px solid #334155;padding-top:3px">🌐 '+esc(d.cn)+'</div>';
-    div.innerHTML=eh; feed.appendChild(div); feed.scrollTop=feed.scrollHeight;
+    var nm=lastCust||d.employee||'员工';
+    if(!convs[nm])convs[nm]=[];
+    var sc=d.score||0;av.textContent=sc+'%';
+    convs[nm].push({tp:'e',txt:d.content,tm:d.time||'',emp:d.employee||'',sc:sc,cn:d.cn||'',issues:d.issues||[]});
+    if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
+    renderBlock(nm);
   }else if(d.type=='alert'){
-    div.style.cssText='background:#3b0a0a;align-self:center;border:2px solid #ef4444;text-align:center;padding:8px';
+    var div=document.createElement('div');
+    div.style.cssText='background:#3b0a0a;align-self:center;border:2px solid #ef4444;text-align:center;padding:8px;margin:8px 0';
     div.innerHTML='<b style=color:#fca5a5>🚨 告警</b><div class=text>'+esc(d.content)+'</div><div style=color:#fca5a5;font-size:11px>'+(d.time||'')+' '+d.score+'/100</div>';
     feed.appendChild(div); feed.scrollTop=feed.scrollHeight;
   }
