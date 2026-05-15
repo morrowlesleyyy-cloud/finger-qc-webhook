@@ -585,16 +585,18 @@ function renderBlock(name){
   feed.scrollTop=feed.scrollHeight;
 }
 
-// Load existing data first
-fetch('/sessions').then(function(r){return r.json()}).then(function(data){
-  for(var phone in data){
-    var s=data[phone];
+// Load existing data from both sessions + training
+fetch('/sessions').then(function(r){return r.json()}).then(function(sdata){
+  var hasData=false;
+  for(var phone in sdata){
+    var s=sdata[phone];
+    if(!s.messages||!s.messages.length)continue;
+    hasData=true;
     var nm=s.contact_name||s.name||phone.slice(-4);
     lastCust=nm;
     cs.add(nm); cc.textContent=cs.size;
     if(!convs[nm])convs[nm]=[];
-    var msgs=s.messages||[];
-    msgs.forEach(function(m){
+    s.messages.forEach(function(m){
       if(m.type=='customer'){
         convs[nm].push({tp:'c',txt:m.content,tm:m.time?m.time.slice(11,16):'',cn:'',issues:[]});
         c++; mc.textContent=c;
@@ -605,7 +607,8 @@ fetch('/sessions').then(function(r){return r.json()}).then(function(data){
     });
     renderBlock(nm);
   }
-  av.textContent='-';
+  av.textContent=hasData?'-':'等待消息...';
+  if(!hasData)feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:50px 20px;line-height:2">暂无历史记录<br>等待Webhook新消息流入...</div>';
 });
 
 // SSE realtime
