@@ -590,18 +590,18 @@ fetch('/sessions').then(function(r){return r.json()}).then(function(sdata){
   var hasData=false;
   for(var phone in sdata){
     var s=sdata[phone];
-    if(!s.messages||!s.messages.length)continue;
+    if(!s.msgs||!s.msgs.length)continue;
     hasData=true;
-    var nm=s.contact_name||s.name||phone.slice(-4);
+    var nm=s.n||phone.slice(-4);
     lastCust=nm;
     cs.add(nm); cc.textContent=cs.size;
     if(!convs[nm])convs[nm]=[];
-    s.messages.forEach(function(m){
-      if(m.type=='customer'){
-        convs[nm].push({tp:'c',txt:m.content,tm:m.time?m.time.slice(11,16):'',cn:'',issues:[]});
+    s.msgs.forEach(function(m){
+      if(m.t=='customer'){
+        convs[nm].push({tp:'c',txt:m.c,tm:m.tm||'',cn:'',issues:[]});
         c++; mc.textContent=c;
-      }else if(m.type=='emp'){
-        convs[nm].push({tp:'e',txt:m.content,tm:m.time?m.time.slice(11,16):'',emp:s.employee||'员工',sc:75,cn:'',issues:[]});
+      }else if(m.t=='emp'){
+        convs[nm].push({tp:'e',txt:m.c,tm:m.tm||'',emp:s.e||'员工',sc:75,cn:'',issues:[]});
         c++; mc.textContent=c;
       }
     });
