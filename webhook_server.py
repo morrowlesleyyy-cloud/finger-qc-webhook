@@ -485,7 +485,7 @@ def list_sessions():
         msgs = []
         emp_name = s.get("employee","")
         for m in s["messages"]:
-            msgs.append({"t":m["type"], "c":m["content"][:300], "tm":m.get("time","")[-8:-3] if isinstance(m.get("time"),str) and len(m.get("time",""))>8 else "", "e":emp_name if m["type"]=="emp" else ""})
+            msgs.append({"t":m["type"], "c":m["content"][:300], "cn":m.get("cn",""), "tm":m.get("time","")[-8:-3] if isinstance(m.get("time"),str) and len(m.get("time",""))>8 else "", "e":emp_name if m["type"]=="emp" else ""})
         res[p[-8:]] = {"n":s.get("contact_name",""),"p":p[-4:],"e":emp_name,"s":s["stage"],"c":len(s["messages"]),"as":round(sum(sc)/len(sc),1) if sc else 0,"msgs":msgs,"la":s.get("last_activity","")}
     return jsonify(res)
 
@@ -574,7 +574,7 @@ function renderBlock(name){
       ext+='<span class="score '+cl+'">'+m.sc+'/100</span>';
     }
     if(m.tp=='c'&&m.cn){
-      ext+='<div style="color:#94a3b8;font-size:11px;margin-top:2px;border-top:1px solid #334155;padding-top:2px">' + m.cn + '</div>';
+      ext+='<div style="color:#94a3b8;font-size:11px;margin-top:2px;border-top:1px solid #334155;padding-top:2px">🌐 ' + m.cn + '</div>';
     }
     if(m.issues&&m.issues.length){
       ext+='<div class=issues>'+m.issues.map(function(i){return '!'+i.label}).join(' . ')+'</div>';
@@ -598,7 +598,7 @@ fetch('/sessions').then(function(r){return r.json()}).then(function(sdata){
     if(!convs[nm])convs[nm]=[];
     s.msgs.forEach(function(m){
       if(m.t=='customer'){
-        convs[nm].push({tp:'c',txt:m.c,tm:m.tm||'',cn:'',issues:[]});
+        convs[nm].push({tp:'c',txt:m.c,tm:m.tm||'',cn:m.cn||'',issues:[]});
         c++; mc.textContent=c;
       }else if(m.t=='emp'){
         convs[nm].push({tp:'e',txt:m.c,tm:m.tm||'',emp:s.e||'员工',sc:75,cn:'',issues:[]});
@@ -642,8 +642,8 @@ es.onmessage=function(e){
     if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
     renderBlock(nm);
     if(d.suggestions&&d.suggestions.length){
-      sf.innerHTML='';
-      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + '</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
+      document.querySelector('.sug-hd').textContent='💡 建议回复 - '+nm;
+      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + ' · ' + nm + '</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
   }else if(d.type=='employee'){
