@@ -643,7 +643,7 @@ es.onmessage=function(e){
     renderBlock(nm);
     if(d.suggestions&&d.suggestions.length){
       sf.innerHTML='';
-      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + '</div><div class=txt>'+esc(s).replace(/\n/g,'<br>')+'</div>';sf.appendChild(card)});
+      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + '</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
   }else if(d.type=='employee'){
