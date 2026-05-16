@@ -540,6 +540,26 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .sug-card .txt{font-size:12px;line-height:1.6;color:#e2e8f0}
 .sug-empty{text-align:center;color:#475569;font-size:12px;padding:30px 14px;line-height:2}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#475569;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#60a5fa}
+.test-btn{position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg,#7c3aed,#6366f1);border:none;border-radius:50px;color:#fff;padding:14px 24px;font-size:15px;font-weight:700;cursor:pointer;z-index:1000;box-shadow:0 4px 16px rgba(124,58,237,.4);transition:all .2s;display:flex;align-items:center;gap:6px}
+.test-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(124,58,237,.6)}
+.test-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;background:rgba(0,0,0,.6)}
+.test-modal.show{display:flex;align-items:center;justify-content:center}
+.test-panel{background:#1e293b;border:1px solid #334155;border-radius:16px;width:600px;max-width:90vw;max-height:85vh;overflow-y:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.test-panel h2{font-size:18px;color:#e2e8f0;margin-bottom:16px;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.test-panel h2 span{font-size:13px;color:#64748b;font-weight:400}
+.test-panel .close-btn{background:transparent;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:6px 12px;cursor:pointer;font-size:13px}
+.test-panel .close-btn:hover{background:#334155;color:#e2e8f0}
+.test-input{width:100%;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#e2e8f0;padding:14px;font-size:15px;font-family:-apple-system,system-ui,sans-serif;outline:none;transition:border-color .2s;min-height:80px;resize:vertical;line-height:1.6;margin-bottom:12px}
+.test-input:focus{border-color:#7c3aed}
+.test-gen-btn{background:linear-gradient(135deg,#7c3aed,#6366f1);border:none;border-radius:10px;color:#fff;padding:14px 0;font-size:16px;font-weight:700;cursor:pointer;width:100%;transition:all .2s}
+.test-gen-btn:hover{opacity:.9}
+.test-gen-btn:disabled{background:#334155;color:#64748b;cursor:not-allowed}
+.test-result{margin-top:16px;display:none}
+.test-result.show{display:block}
+.test-result .result-card{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px;margin-bottom:10px;animation:fadeIn .3s}
+.test-result .result-card .num{font-size:11px;color:#7c3aed;font-weight:600;margin-bottom:4px}
+.test-result .result-card .txt{font-size:14px;line-height:1.6;color:#e2e8f0;white-space:pre-wrap}
+.test-result .loading{text-align:center;padding:20px;color:#64748b}
 </style></head><body>
 <div class=header><h1>Finger 实时看板</h1>
 <div class=stats><span>消息 <b id=msgC>0</b></span><span>客户 <b id=custC>0</b></span><span>均分 <b id=avgS>-</b></span></div>
@@ -708,6 +728,26 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .conv-msg .score{font-size:10px;color:#facc15;margin-top:1px}
 @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#475569;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#60a5fa}
+.test-btn{position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg,#7c3aed,#6366f1);border:none;border-radius:50px;color:#fff;padding:14px 24px;font-size:15px;font-weight:700;cursor:pointer;z-index:1000;box-shadow:0 4px 16px rgba(124,58,237,.4);transition:all .2s;display:flex;align-items:center;gap:6px}
+.test-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(124,58,237,.6)}
+.test-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;background:rgba(0,0,0,.6)}
+.test-modal.show{display:flex;align-items:center;justify-content:center}
+.test-panel{background:#1e293b;border:1px solid #334155;border-radius:16px;width:600px;max-width:90vw;max-height:85vh;overflow-y:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.test-panel h2{font-size:18px;color:#e2e8f0;margin-bottom:16px;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.test-panel h2 span{font-size:13px;color:#64748b;font-weight:400}
+.test-panel .close-btn{background:transparent;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:6px 12px;cursor:pointer;font-size:13px}
+.test-panel .close-btn:hover{background:#334155;color:#e2e8f0}
+.test-input{width:100%;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#e2e8f0;padding:14px;font-size:15px;font-family:-apple-system,system-ui,sans-serif;outline:none;transition:border-color .2s;min-height:80px;resize:vertical;line-height:1.6;margin-bottom:12px}
+.test-input:focus{border-color:#7c3aed}
+.test-gen-btn{background:linear-gradient(135deg,#7c3aed,#6366f1);border:none;border-radius:10px;color:#fff;padding:14px 0;font-size:16px;font-weight:700;cursor:pointer;width:100%;transition:all .2s}
+.test-gen-btn:hover{opacity:.9}
+.test-gen-btn:disabled{background:#334155;color:#64748b;cursor:not-allowed}
+.test-result{margin-top:16px;display:none}
+.test-result.show{display:block}
+.test-result .result-card{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px;margin-bottom:10px;animation:fadeIn .3s}
+.test-result .result-card .num{font-size:11px;color:#7c3aed;font-weight:600;margin-bottom:4px}
+.test-result .result-card .txt{font-size:14px;line-height:1.6;color:#e2e8f0;white-space:pre-wrap}
+.test-result .loading{text-align:center;padding:20px;color:#64748b}
 .no-data{text-align:center;color:#475569;font-size:13px;padding:60px 20px;line-height:2}
 </style></head><body>
 <div class=header><h1>📋 沟通记录</h1><nav>
@@ -899,6 +939,26 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 .msg-ok{background:#166534;color:#4ade80;border:1px solid #22c55e40}
 .msg-err{background:#7f1d1d;color:#fca5a5;border:1px solid #ef444440}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#1e293b}::-webkit-scrollbar-thumb{background:#475569;border-radius:5px}::-webkit-scrollbar-thumb:hover{background:#60a5fa}
+.test-btn{position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg,#7c3aed,#6366f1);border:none;border-radius:50px;color:#fff;padding:14px 24px;font-size:15px;font-weight:700;cursor:pointer;z-index:1000;box-shadow:0 4px 16px rgba(124,58,237,.4);transition:all .2s;display:flex;align-items:center;gap:6px}
+.test-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(124,58,237,.6)}
+.test-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;background:rgba(0,0,0,.6)}
+.test-modal.show{display:flex;align-items:center;justify-content:center}
+.test-panel{background:#1e293b;border:1px solid #334155;border-radius:16px;width:600px;max-width:90vw;max-height:85vh;overflow-y:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.test-panel h2{font-size:18px;color:#e2e8f0;margin-bottom:16px;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.test-panel h2 span{font-size:13px;color:#64748b;font-weight:400}
+.test-panel .close-btn{background:transparent;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:6px 12px;cursor:pointer;font-size:13px}
+.test-panel .close-btn:hover{background:#334155;color:#e2e8f0}
+.test-input{width:100%;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#e2e8f0;padding:14px;font-size:15px;font-family:-apple-system,system-ui,sans-serif;outline:none;transition:border-color .2s;min-height:80px;resize:vertical;line-height:1.6;margin-bottom:12px}
+.test-input:focus{border-color:#7c3aed}
+.test-gen-btn{background:linear-gradient(135deg,#7c3aed,#6366f1);border:none;border-radius:10px;color:#fff;padding:14px 0;font-size:16px;font-weight:700;cursor:pointer;width:100%;transition:all .2s}
+.test-gen-btn:hover{opacity:.9}
+.test-gen-btn:disabled{background:#334155;color:#64748b;cursor:not-allowed}
+.test-result{margin-top:16px;display:none}
+.test-result.show{display:block}
+.test-result .result-card{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:14px;margin-bottom:10px;animation:fadeIn .3s}
+.test-result .result-card .num{font-size:11px;color:#7c3aed;font-weight:600;margin-bottom:4px}
+.test-result .result-card .txt{font-size:14px;line-height:1.6;color:#e2e8f0;white-space:pre-wrap}
+.test-result .loading{text-align:center;padding:20px;color:#64748b}
 @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 .card{animation:fadeIn .3s}
 </style></head><body>
@@ -1048,7 +1108,38 @@ function showMsg(t,type){
 function esc(t){var d=document.createElement('div');d.textContent=t||'';return d.innerHTML}
 loadData();
 setInterval(loadData,10000);
-</script></body></html>"""
+</script>
+<div id="testBtn" class="test-btn" onclick="openTest()">🧪 测试话术</div>
+<div id="testModal" class="test-modal" onclick="if(event.target===this)closeTest()">
+<div class="test-panel">
+<h2>🧪 话术测试 <span>输入客户问题，验证培训效果</span><button class="close-btn" onclick="closeTest()">✕ 关闭</button></h2>
+<textarea class="test-input" id="testInput" placeholder="例如：种一颗牙多少钱？&#10;智齿痛怎么办？&#10;Harga berapa?&#10;..."></textarea>
+<button class="test-gen-btn" id="testGenBtn" onclick="generateTest()">🚀 生成建议话术</button>
+<div class="test-result" id="testResult"></div>
+</div>
+</div>
+<script>
+function openTest(){document.getElementById('testModal').classList.add('show');document.getElementById('testResult').innerHTML='';document.getElementById('testResult').classList.remove('show')}
+function closeTest(){document.getElementById('testModal').classList.remove('show')}
+async function generateTest(){
+  var input=document.getElementById('testInput').value.trim();
+  if(!input){alert('请输入客户问题');return}
+  var btn=document.getElementById('testGenBtn');btn.disabled=true;btn.textContent='⏳ 生成中...';
+  var result=document.getElementById('testResult');result.classList.add('show');
+  result.innerHTML='<div class=loading>🧠 Finger 正在思考话术...</div>';
+  try{
+    var resp=await fetch('/api/training/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:input})});
+    var data=await resp.json();
+    if(!data.ok)throw new Error(data.error||'生成失败');
+    var scripts=data.scripts||[];
+    result.innerHTML='<div style="font-size:13px;color:#94a3b8;margin-bottom:10px">💡 基于培训知识库生成的话术建议：</div>'+
+      scripts.map(function(s,i){return '<div class=result-card><div class=num>话术 '+(i+1)+'</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div></div>'}).join('');
+  }catch(e){
+    result.innerHTML='<div class=result-card style="border-color:#7f1d1d"><div class=num style="color:#fca5a5">❌ 生成失败</div><div class=txt style="color:#fca5a5">'+esc(e.message)+'</div></div>';
+  }finally{btn.disabled=false;btn.textContent='🚀 生成建议话术'}
+}
+</script>
+</body></html>"""
 
 
 @app.route("/training")
@@ -1120,6 +1211,21 @@ def training_delete():
         return jsonify({"error": "not found"}), 404
     save_training_data(data)
     return jsonify({"ok": True, "deleted": qid})
+
+
+@app.route("/api/training/generate", methods=["POST"])
+def training_generate():
+    """生成测试话术"""
+    d = request.get_json(silent=True) or {}
+    text = d.get("text", "").strip()
+    if not text:
+        return jsonify({"ok": False, "error": "请输入客户问题"})
+    from random import sample
+    # Use the existing generate_training_scripts
+    scripts = generate_training_scripts(text)
+    if not scripts:
+        scripts = ["建议来院免费检查，医生面诊后给出方案", "我们可以先安排免费CBCT拍片看看情况", "方便的话预约时间来了解详情"]
+    return jsonify({"ok": True, "scripts": scripts})
 
 
 if __name__ == "__main__":
