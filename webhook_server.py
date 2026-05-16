@@ -642,7 +642,7 @@ es.onmessage=function(e){
     if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
     renderBlock(nm);
     if(d.suggestions&&d.suggestions.length){
-      document.querySelector('.sug-hd').textContent='💡 建议回复 - '+nm;
+      document.querySelector('.sug-hd').textContent='💡 建议回复';
       d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + ' · ' + nm + '</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
