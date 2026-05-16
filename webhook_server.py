@@ -1158,7 +1158,8 @@ async function generateTest(){
     var data=await resp.json();
     if(!data.ok)throw new Error(data.error||'生成失败');
     var scripts=data.scripts||[];
-    result.innerHTML='<div style="font-size:13px;color:#94a3b8;margin-bottom:10px">💡 基于培训知识库生成的话术建议：</div>'+
+    var header='💡 生成的话术建议';if(data.matched)header+=' (匹配培训 '+data.source+')';else header+=' (规则生成)';
+    result.innerHTML='<div style="font-size:13px;color:#94a3b8;margin-bottom:10px">'+header+'</div>'+'+
       scripts.map(function(s,i){return '<div class=result-card><div class=num>话术 '+(i+1)+'</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div></div>'}).join('');
   }catch(e){
     result.innerHTML='<div class=result-card style="border-color:#7f1d1d"><div class=num style="color:#fca5a5">❌ 生成失败</div><div class=txt style="color:#fca5a5">'+esc(e.message)+'</div></div>';
@@ -1241,17 +1242,75 @@ def training_delete():
 
 @app.route("/api/training/generate", methods=["POST"])
 def training_generate():
-    """生成测试话术"""
+    """生成测试话术 - 优先匹配培训数据，无匹配则规则生成"""
     d = request.get_json(silent=True) or {}
     text = d.get("text", "").strip()
     if not text:
         return jsonify({"ok": False, "error": "请输入客户问题"})
-    from random import sample
-    # Use the existing generate_training_scripts
+    
+    # 优先搜索培训数据
+    td = load_training_data()
+    pairs = td.get("training_pairs", [])
+    t_lower = text.lower()
+    # 分词：英文按单词，中文按单字 + 双字组合
+    t_chars = set(re.findall(r'[\u4e00-\u9fff]', t_lower))  # 单字
+    t_bigrams = set()
+    cjk = re.findall(r'[\u4e00-\u9fff]+', t_lower)
+    for chunk in cjk:
+        for i in range(len(chunk)-1):
+            t_bigrams.add(chunk[i:i+2])  # 双字组合
+    t_eng = set(re.findall(r'[a-z]+', t_lower))
+    t_nums = set(re.findall(r'\d+', t_lower))
+    t_words = t_chars | t_bigrams | t_eng | t_nums
+    t_words.discard('')
+    
+    best_match = None
+    best_score = 0
+    best_answers = []
+    # 高优关键词（价格/数量相关）
+    priority_kw = ['多少','费用','价格','cost','price','how much','harga','rm','收费','俩','两','二','2','双','pair','两颗','一对','八千','8k','8000','千']
+    
+    for p in pairs:
+        q = (p.get("customer_question", "") or "").lower()
+        q_chars = set(re.findall(r'[\u4e00-\u9fff]', q))
+        q_bigrams = set()
+        cjk_q = re.findall(r'[\u4e00-\u9fff]+', q)
+        for chunk in cjk_q:
+            for i in range(len(chunk)-1):
+                q_bigrams.add(chunk[i:i+2])
+        q_eng = set(re.findall(r'[a-z]+', q))
+        q_nums = set(re.findall(r'\d+', q))
+        q_words = q_chars | q_bigrams | q_eng | q_nums
+        if not q_words or not t_words:
+            continue
+        overlap = len(t_words & q_words)
+        # 用问题长度归一化，短问题匹配权重高
+        score = overlap / max(len(q_words), 1) * 100
+        # 输入越长需要的匹配数越多，但给短输入更高加分
+        if len(t_words) <= 3:
+            score *= 1.3
+        # 优先级关键词加分
+        for kw in priority_kw:
+            if kw in t_lower and kw in q:
+                score += 25
+        # 全匹配加分
+        if t_words.issubset(q_words):
+            score += 30
+        if score > best_score:
+            best_score = score
+            best_match = p
+            best_answers = [a.get("text","") if isinstance(a,dict) else str(a) for a in p.get("answers",[]) if (a.get("text","") if isinstance(a,dict) else str(a)).strip()]
+    
+    if best_match and best_score >= 20 and best_answers:
+        log.info(f"🧪 测试匹配 #{best_match['id']}: {best_match['customer_question'][:40]}... (分={best_score:.0f})")
+        return jsonify({"ok": True, "scripts": best_answers[:5], "source": f"#{best_match['id']}", "matched": True})
+    
+    # 无匹配，规则生成
+    log.info(f"🧪 测试未匹配到培训 (最高分={best_score:.0f})")
     scripts = generate_training_scripts(text)
     if not scripts:
         scripts = ["建议来院免费检查，医生面诊后给出方案", "我们可以先安排免费CBCT拍片看看情况", "方便的话预约时间来了解详情"]
-    return jsonify({"ok": True, "scripts": scripts})
+    return jsonify({"ok": True, "scripts": scripts, "matched": False})
 
 
 if __name__ == "__main__":
