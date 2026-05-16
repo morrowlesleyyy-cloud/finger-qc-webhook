@@ -53,20 +53,35 @@ def save_session(phone,s,d):
 
 # Employee detection
 _emp_cache = {}
+# Complete known staff list
+ALL_STAFF = ['mia','andy','cici','jestina','sophia','小枫','may','john','fong','iris','christine','vicky','lily']
+
 def identify_employee(text, phone=""):
     if phone and phone in _emp_cache: return _emp_cache[phone]
     t = text.lower().strip()
     name = '员工'
-    m = re.search(r'(?:我.?是|i.?m|i am|this is|name is)\s*(?:医生助理|种植牙客服|美芽|me(?:ya)?.?dental.?的)?\s*(mia|andy|cici|jestina|sophia|小枫|may|john|fong)', t, re.IGNORECASE)
-    if m: name = m.group(1).capitalize()
-    elif "i'm john" in t or "john, consultation" in t: name = 'John'
-    elif "i'm may" in t: name = 'May'
-    elif 'jestina' in t: name = 'Jestina'
-    elif 'sophia' in t: name = 'Sophia'
-    elif '小枫' in t: name = '小枫'
-    elif re.search(r'😉|🥰|🤗', t): name = 'Mia'
-    elif re.search(r'consultation assistant|dental technology', t): name = 'John'
-    elif '我是 meya dental 的专业' in t or '免费为你提供' in t: name = '🤖 Bot'
+    # 1. Direct name mention (anywhere in text)
+    for staff in ALL_STAFF:
+        if staff in t:
+            name = staff.capitalize() if staff == staff.lower() else staff
+            break
+    # 2. Intro patterns: "I'm X" / "我是X" / "this is X"
+    if name == '员工':
+        m = re.search(r'(?:我.?是|i.?m|i am|this is|name is)\s*(?:医生助理|种植牙客服|美芽|me(?:ya)?.?dental.?的)?\s*(mia|andy|cici|jestina|sophia|小枫|may|john|fong|iris|christine|vicky|lily)', t, re.IGNORECASE)
+        if m: name = m.group(1).capitalize() if m.group(1) == m.group(1).lower() else m.group(1)
+    # 3. Role-based detection (no explicit name mentioned)
+    if name == '员工':
+        if re.search(r'consultation assistant|dental technology', t): name = 'John'
+        elif '我是 meya dental 的' in t or '免费为你提供' in t: name = '🤖 Bot'
+        # Mia: emoji + greeting or dental context (her signature style)
+        elif re.search(r'😉|🥰|🤗|😊|😃', t):
+            if re.search(r'(?:种植|implant|dental|诊所|牙|teeth|tooth|promotion|rm|puchong|pfcc|医生|检查|免费|预约|您好|你好|早上好|hi|hello|住|哪里|方便|明天)', t):
+                name = 'Mia'
+        # Fong/其他: 医生助理 + 电话号 + meya
+        elif re.search(r'(?:01[0-9]-\d{3,})', t) and re.search(r'医生助理|助理|meya|美芽|dental', t):
+            name = 'Fong'
+        # Cici: 医生助理
+        elif re.search(r'医生助理|助理', t) and re.search(r'meya|美芽|dental', t): name = 'Cici'
     if phone and name not in ('员工','🤖 Bot'): _emp_cache[phone] = name
     return name
 
@@ -430,16 +445,27 @@ def handle_outbound(msg):
     if not p: p = f"u_{int(time.time())}"
     session, data = get_session(p)
     analysis = analyze_message(c)
-    session["messages"].append({"type":"emp","content":c,"time":bj_now().isoformat()})
+    session["messages"].append({"type":"emp","content":c,"time":bj_now().isoformat(),"emp_name":emp})
     session["score_history"].append({"score":analysis["score"],"time":bj_now().isoformat()})
     data["all_scores"].append(analysis["score"])
     data["total_messages"] = data.get("total_messages",0)+1
-    save_session(p,session,data)
     tag = session.get("contact_name","") or p[-4:]
     emp = identify_employee(c, p)
     if emp not in ('员工','🤖 Bot'):
         session["employee"] = emp
-        save_session(p,session,data)  # 重新保存以更新员工名字
+    # Stage tracking: update stage based on message patterns
+    c_lower = c.lower()
+    current_stage = session.get("stage","unknown")
+    if current_stage == "unknown" and re.search(r'(?:hi|hello|hai|您好|你好|咨询|ask|info)', c_lower):
+        session["stage"] = "initial_contact"
+    elif current_stage in ("unknown","initial_contact") and re.search(r'(?:多少|price|cost|rm|how much|harga)', c_lower):
+        session["stage"] = "price_inquiry"
+    elif current_stage in ("unknown","initial_contact","price_inquiry") and re.search(r'(?:预约|appointment|book|schedule|过来|come|visit|dtg|jom)', c_lower):
+        session["stage"] = "booking"
+    elif re.search(r'(?:ok|好的|setuju|agree|done|thank)', c_lower) and "booking" not in c_lower:
+        # Don't auto-downgrade - only upgrade
+        pass
+    save_session(p,session,data)
     log.info(f"📤 [{emp}] {tag}: {c[:60]} | {analysis['score']}")
     for i in analysis["issues"]: log.info(f"  ⚠️ {i['label']}")
     now = bj_now().strftime("%H:%M")
@@ -485,7 +511,7 @@ def list_sessions():
         msgs = []
         emp_name = s.get("employee","")
         for m in s["messages"]:
-            msgs.append({"t":m["type"], "c":m["content"][:300], "cn":m.get("cn",""), "tm":m.get("time","")[-8:-3] if isinstance(m.get("time"),str) and len(m.get("time",""))>8 else "", "e":emp_name if m["type"]=="emp" else ""})
+            msgs.append({"t":m["type"], "c":m["content"][:300], "cn":m.get("cn",""), "tm": (lambda t: re.search(r'T(\d{2}:\d{2})', t).group(1) if isinstance(t,str) and re.search(r'T(\d{2}:\d{2})', t) else t[-5:] if isinstance(t,str) and len(t)>=5 else '')(m.get("time","")), "e":emp_name if m["type"]=="emp" else ""})
         res[p[-8:]] = {"n":s.get("contact_name",""),"p":p[-4:],"e":emp_name,"s":s["stage"],"c":len(s["messages"]),"as":round(sum(sc)/len(sc),1) if sc else 0,"msgs":msgs,"la":s.get("last_activity","")}
     return jsonify(res)
 
