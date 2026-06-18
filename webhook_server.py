@@ -444,13 +444,13 @@ def handle_outbound(msg):
     if not c or (st and st!="sent"): return
     if not p: p = f"u_{int(time.time())}"
     session, data = get_session(p)
+    emp = identify_employee(c, p)
     analysis = analyze_message(c)
     session["messages"].append({"type":"emp","content":c,"time":bj_now().isoformat(),"emp_name":emp})
     session["score_history"].append({"score":analysis["score"],"time":bj_now().isoformat()})
     data["all_scores"].append(analysis["score"])
     data["total_messages"] = data.get("total_messages",0)+1
     tag = session.get("contact_name","") or p[-4:]
-    emp = identify_employee(c, p)
     if emp not in ('员工','🤖 Bot'):
         session["employee"] = emp
     # Stage tracking: update stage based on message patterns
@@ -504,13 +504,29 @@ def status():
 
 @app.route("/sessions")
 def list_sessions():
-    d = load_data(); res = {}
+    d = load_data()
+    limit = request.args.get("limit", 200, type=int)
+    recent_days = request.args.get("days", 0, type=int)
+    res = {}
+    # Build list of sessions with messages, sorted by last_activity desc
+    sessions = []
     for p,s in d["sessions"].items():
         if not s["messages"]: continue
+        sessions.append((p, s))
+    sessions.sort(key=lambda x: x[1].get("last_activity",""), reverse=True)
+    # Apply recent filter
+    if recent_days > 0:
+        cutoff = bj_now() - timedelta(days=recent_days)
+        sessions = [(p,s) for p,s in sessions if s.get("last_activity","") >= cutoff.isoformat()]
+    # Apply limit
+    sessions = sessions[:limit]
+    for p,s in sessions:
         sc = [h["score"] for h in s["score_history"]]
-        msgs = []
         emp_name = s.get("employee","")
-        for m in s["messages"]:
+        # Limit messages per session to last 30
+        msgs_raw = s["messages"][-30:]
+        msgs = []
+        for m in msgs_raw:
             msgs.append({"t":m["type"], "c":m["content"][:300], "cn":m.get("cn",""), "tm": (lambda t: re.search(r'T(\d{2}:\d{2})', t).group(1) if isinstance(t,str) and re.search(r'T(\d{2}:\d{2})', t) else t[-5:] if isinstance(t,str) and len(t)>=5 else '')(m.get("time","")), "e":emp_name if m["type"]=="emp" else ""})
         res[p[-8:]] = {"n":s.get("contact_name",""),"p":p[-4:],"e":emp_name,"s":s["stage"],"c":len(s["messages"]),"as":round(sum(sc)/len(sc),1) if sc else 0,"msgs":msgs,"la":s.get("last_activity","")}
     return jsonify(res)
@@ -600,20 +616,21 @@ let c=0, cs=new Set(), lastCust='';
 const convs={};
 const SHOW=5;
 
-function renderBlock(name){
+function renderBlock(name, label){
   var msgs=convs[name];
   if(!msgs||!msgs.length)return;
-  var el=document.getElementById('b-'+esc(name));
+  var display=(label||name);
+  var el=document.getElementById('b-'+name);
   if(!el){
-    el=document.createElement('div');el.id='b-'+esc(name);
+    el=document.createElement('div');el.id='b-'+name;
     el.style.cssText='margin-bottom:12px;background:#1e293b;border-radius:10px;padding:10px;border:1px solid #334155';
     feed.appendChild(el);
   }
   var show=msgs.slice(-SHOW);
-  var h='<div style="font-size:11px;color:#38bdf8;font-weight:600;padding-bottom:6px;border-bottom:1px solid #334155;margin-bottom:6px">' + esc(name) + '</div>';
+  var h='<div style="font-size:11px;color:#38bdf8;font-weight:600;padding-bottom:6px;border-bottom:1px solid #334155;margin-bottom:6px">' + esc(display) + '</div>';
   show.forEach(function(m){
     var side=m.tp=='c'?'in':'out';
-    var who=m.tp=='c'?esc(name):esc(m.emp||'员工');
+    var who=m.tp=='c'?esc(display):esc(m.emp||'员工');
     var ext='';
     if(m.tp=='e'&&m.sc!=null){
       var cl=m.sc>=80?'s-good':(m.sc>=60?'s-ok':'s-bad');
@@ -631,45 +648,40 @@ function renderBlock(name){
   feed.scrollTop=feed.scrollHeight;
 }
 
-// Load existing data from both sessions + training
-fetch('/sessions').then(function(r){return r.json()}).then(function(sdata){
-  var hasData=false;
+// Load existing data (limited, recent)
+feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:30px 20px">⏳ 加载中...</div>';
+fetch('/sessions?limit=100&days=30').then(function(r){return r.json()}).then(function(sdata){
+  var hasData=false, allScores=[], totalScored=0;
   for(var phone in sdata){
     var s=sdata[phone];
     if(!s.msgs||!s.msgs.length)continue;
     hasData=true;
-    var nm=s.n||phone.slice(-4);
-    lastCust=nm;
-    cs.add(nm); cc.textContent=cs.size;
-    if(!convs[nm])convs[nm]=[];
+    var label=s.n||('...'+phone.slice(-4));
+    var key=phone; // unique stable key
+    lastCust=label;
+    cs.add(key); cc.textContent=cs.size;
+    if(!convs[key])convs[key]=[];
+    var sas=s.as||0;
     s.msgs.forEach(function(m){
       if(m.t=='customer'){
-        convs[nm].push({tp:'c',txt:m.c,tm:m.tm||'',cn:m.cn||'',issues:[]});
+        convs[key].push({tp:'c',txt:m.c,tm:m.tm||'',cn:m.cn||'',issues:[]});
         c++; mc.textContent=c;
       }else if(m.t=='emp'){
-        convs[nm].push({tp:'e',txt:m.c,tm:m.tm||'',emp:s.e||'员工',sc:75,cn:'',issues:[]});
+        var sc=(s.as||75);
+        convs[key].push({tp:'e',txt:m.c,tm:m.tm||'',emp:s.e||'员工',sc:sc,cn:'',issues:[]});
         c++; mc.textContent=c;
       }
     });
-    renderBlock(nm);
+    if(sas>0){allScores.push(sas); totalScored++;}
+    renderBlock(key,label);
   }
-  av.textContent=hasData?'-':'等待消息...';
+  feed.innerHTML=feed.innerHTML.replace(/⏳.*/,'');
+  if(hasData&&allScores.length){
+    var avg=Math.round(allScores.reduce(function(a,b){return a+b},0)/allScores.length);
+    av.textContent=avg+'%';
+  }else{av.textContent=hasData?'?':'-';}
   if(!hasData){
-    // Fallback: show training questions as demo
-    fetch('/api/training').then(function(r2){return r2.json()}).then(function(td){
-      var tps=(td.training_pairs||[]).slice(-10);
-      tps.forEach(function(tp){
-        c++; mc.textContent=c;
-        var nm='培训: '+tp.id;
-        cs.add(nm); cc.textContent=cs.size;
-        if(!convs[nm])convs[nm]=[];
-        convs[nm].push({tp:'c',txt:tp.customer_question,tm:'',cn:'',issues:[]});
-        var ans=tp.answers||[];
-        if(ans.length&&ans[0].text)convs[nm].push({tp:'e',txt:ans[0].text.slice(0,100),tm:'',emp:tp.source||'员工',sc:75,cn:'',issues:[]});
-        renderBlock(nm);
-      });
-      if(!tps.length)feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:50px 20px;line-height:2">暂无数据<br>等待Webhook新消息流入...</div>';
-    });
+    feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:50px 20px;line-height:2">暂无数据<br>等待Webhook新消息流入...</div>';
   }
 });
 
@@ -789,14 +801,14 @@ body{font-family:-apple-system,system-ui,sans-serif;background:#0f172a;color:#e2
 </div></div>
 <script>
 var data=null, curEmp=null, curCust=null;
-function load(){fetch('/sessions').then(function(r){return r.json()}).then(function(d){data=d;render()})}
+function load(){fetch('/sessions?limit=300&days=90').then(function(r){return r.json()}).then(function(d){data=d;render()})}
 function render(){
   // Build employee list
   var emps={};
   for(var k in data){
     var s=data[k];
     // Try to get employee name from session data - store emp mapping
-    var emp=s.emp||'未分配';
+    var emp=s.e||'未分配';
     if(!emps[emp])emps[emp]={count:0,custs:[]};
     emps[emp].count++;
   }
@@ -807,18 +819,19 @@ function render(){
 }
 
 function refreshDisplay(){
-  fetch('/sessions').then(function(r){return r.json()}).then(function(d){
+  fetch('/sessions?limit=300&days=90').then(function(r){return r.json()}).then(function(d){
     data=d;
     // Group sessions by employee
     var emps={}, allCusts=[];
     for(var k in d){
       var s=d[k];
       var empName='未分配';
-      // We need to find employee name from session - check the messages
-      for(var mi=0;mi<(s.msgs||[]).length;mi++){
+      // Use session-level employee first, then check messages
+      if(s.e&&s.e!='员工'&&s.e!='🤖 Bot'){empName=s.e;}
+      else{for(var mi=0;mi<(s.msgs||[]).length;mi++){
         var m=s.msgs[mi];
-        if(m.emp&&m.emp!='员工'&&m.emp!='🤖 Bot'){empName=m.emp;break}
-      }
+        if(m.e&&m.e!='员工'&&m.e!='🤖 Bot'){empName=m.e;break}
+      }}
       // Also check from the messages content
       var allMsgs=s.msgs||[];
       var msgs=[];
