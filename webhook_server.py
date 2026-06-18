@@ -434,7 +434,7 @@ def handle_inbound(msg):
     now = bj_now().strftime("%H:%M")
     cn = translate_text(c)
     sug = detect_scenario(c)
-    m = {"type":"customer","name":tag,"content":c,"source":s,"time":now,"suggestions":sug}
+    m = {"type":"customer","name":tag,"key":p[-8:],"content":c,"source":s,"time":now,"suggestions":sug}
     if cn: m["cn"] = cn
     broadcast(m)
 
@@ -470,7 +470,7 @@ def handle_outbound(msg):
     for i in analysis["issues"]: log.info(f"  ⚠️ {i['label']}")
     now = bj_now().strftime("%H:%M")
     cn = translate_text(c)
-    bcast = {"type":"employee","employee":emp,"content":c,"score":analysis["score"],"issues":analysis["issues"],"time":now}
+    bcast = {"type":"employee","key":p[-8:],"employee":emp,"content":c,"score":analysis["score"],"issues":analysis["issues"],"time":now}
     if cn: bcast["cn"] = cn
     broadcast(bcast)
     if analysis["score"]<60: broadcast({"type":"alert","content":c,"score":analysis["score"],"time":now})
@@ -690,27 +690,31 @@ const es=new EventSource('/sse-stream');
 es.onmessage=function(e){
   const d=JSON.parse(e.data);
   if(d.type=='ready')return;
-  c++; mc.textContent=c;
   if(d.type=='customer'){
-    var nm=d.name||d.phone||'客户';
-    lastCust=nm;
-    cs.add(nm); cc.textContent=cs.size;
-    if(!convs[nm])convs[nm]=[];
-    convs[nm].push({tp:'c',txt:d.content,tm:d.time||'',cn:d.cn||'',issues:[]});
-    if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
-    renderBlock(nm);
+    var key=d.key||d.name||'客户';
+    var label=d.name||key;
+    lastCust=label;
+    c++; mc.textContent=c;
+    cs.add(key); cc.textContent=cs.size;
+    if(!convs[key])convs[key]=[];
+    convs[key].push({tp:'c',txt:d.content,tm:d.time||'',cn:d.cn||'',issues:[]});
+    if(convs[key].length>SHOW*2)convs[key].splice(0,convs[key].length-SHOW);
+    renderBlock(key,label);
     if(d.suggestions&&d.suggestions.length){
       document.querySelector('.sug-hd').textContent='💡 建议回复';
-      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + ' · ' + nm + '</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
+      d.suggestions.forEach(function(s,i){var card=document.createElement('div');card.className='sug-card';card.innerHTML='<div class=num>' + (i+1) + ' · ' + label + '</div><div class=txt>'+esc(s).replace(/\\n/g,'<br>')+'</div>';sf.appendChild(card)});
       sf.scrollTop=0;
     }
   }else if(d.type=='employee'){
-    var nm=lastCust||d.employee||'员工';
-    if(!convs[nm])convs[nm]=[];
+    var key,nm;
+    if(d.key&&convs[d.key]){key=d.key;nm=lastCust||d.employee||'员工';}
+    else{key=lastCust||d.employee||'员工';nm=key;}
+    if(!convs[key])convs[key]=[];
+    c++; mc.textContent=c;
     var sc=d.score||0;av.textContent=sc+'%';
-    convs[nm].push({tp:'e',txt:d.content,tm:d.time||'',emp:d.employee||'',sc:sc,cn:d.cn||'',issues:d.issues||[]});
-    if(convs[nm].length>SHOW*2)convs[nm].splice(0,convs[nm].length-SHOW);
-    renderBlock(nm);
+    convs[key].push({tp:'e',txt:d.content,tm:d.time||'',emp:d.employee||'',sc:sc,cn:d.cn||'',issues:d.issues||[]});
+    if(convs[key].length>SHOW*2)convs[key].splice(0,convs[key].length-SHOW);
+    renderBlock(key,nm);
   }else if(d.type=='alert'){
     var div=document.createElement('div');
     div.style.cssText='background:#3b0a0a;align-self:center;border:2px solid #ef4444;text-align:center;padding:8px;margin:8px 0';
