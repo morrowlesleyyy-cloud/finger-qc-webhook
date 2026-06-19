@@ -650,7 +650,7 @@ function renderBlock(name, label){
 
 // Load existing data (limited, recent)
 feed.innerHTML='<div style="text-align:center;color:#475569;font-size:13px;padding:30px 20px">⏳ 加载中...</div>';
-fetch('/sessions?limit=100&days=30').then(function(r){return r.json()}).then(function(sdata){
+fetch('/sessions?limit=20&days=30').then(function(r){return r.json()}).then(function(sdata){
   var hasData=false, allScores=[], totalScored=0;
   for(var phone in sdata){
     var s=sdata[phone];
@@ -660,7 +660,7 @@ fetch('/sessions?limit=100&days=30').then(function(r){return r.json()}).then(fun
     var key=phone; // unique stable key
     lastCust=label;
     cs.add(key); cc.textContent=cs.size;
-    if(!convs[key])convs[key]=[];
+    if(!convs[key]){convs[key]=[];convs[key]._label=label;}
     var sas=s.as||0;
     s.msgs.forEach(function(m){
       if(m.t=='customer'){
@@ -694,10 +694,14 @@ es.onmessage=function(e){
     var key=d.key||d.name||'客户';
     var label=d.name||key;
     lastCust=label;
-    c++; mc.textContent=c;
     cs.add(key); cc.textContent=cs.size;
-    if(!convs[key])convs[key]=[];
-    convs[key].push({tp:'c',txt:d.content,tm:d.time||'',cn:d.cn||'',issues:[]});
+    if(!convs[key]){convs[key]=[];convs[key]._label=label;}
+    // skip dup
+    var dup=convs[key].length&&convs[key][convs[key].length-1].txt===d.content&&convs[key][convs[key].length-1].tm===d.time;
+    if(!dup){
+      c++; mc.textContent=c;
+      convs[key].push({tp:'c',txt:d.content,tm:d.time||'',cn:d.cn||'',issues:[]});
+    }
     if(convs[key].length>SHOW*2)convs[key].splice(0,convs[key].length-SHOW);
     renderBlock(key,label);
     if(d.suggestions&&d.suggestions.length){
@@ -706,13 +710,16 @@ es.onmessage=function(e){
       sf.scrollTop=0;
     }
   }else if(d.type=='employee'){
-    var key,nm;
-    if(d.key&&convs[d.key]){key=d.key;nm=lastCust||d.employee||'员工';}
-    else{key=lastCust||d.employee||'员工';nm=key;}
-    if(!convs[key])convs[key]=[];
-    c++; mc.textContent=c;
+    var key=d.key||'',nm='';
+    if(key&&convs[key]){nm=convs[key]._label||d.employee||'员工';}
+    else{key=lastCust||d.employee||'员工';nm=key;if(!convs[key]){convs[key]=[];convs[key]._label=nm;}}
     var sc=d.score||0;av.textContent=sc+'%';
-    convs[key].push({tp:'e',txt:d.content,tm:d.time||'',emp:d.employee||'',sc:sc,cn:d.cn||'',issues:d.issues||[]});
+    // skip dup
+    var dup=convs[key].length&&convs[key][convs[key].length-1].txt===d.content&&convs[key][convs[key].length-1].tm===d.time;
+    if(!dup){
+      c++; mc.textContent=c;
+      convs[key].push({tp:'e',txt:d.content,tm:d.time||'',emp:d.employee||'',sc:sc,cn:d.cn||'',issues:d.issues||[]});
+    }
     if(convs[key].length>SHOW*2)convs[key].splice(0,convs[key].length-SHOW);
     renderBlock(key,nm);
   }else if(d.type=='alert'){
